@@ -30,3 +30,10 @@ One downside is if daisyUI releases new versions that extend or change the API, 
 - Try as much as possible to NOT force design / architecture decisions when using this repo
     - don't tell you what icons to use, what js/css build pipeline you need to use, etc.
 
+
+
+## ROADMAP
+
+1. Create all daisyui components as django-cotton components
+2. Create satisfactory documentation pages / kitchen sink
+    - basically copy-pasting what daisyUI has on their docs
