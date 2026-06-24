@@ -6,25 +6,27 @@
 </div>
 
 <ul class="menu menu-md w-full p-0">
-    <li class="menu-title">Components</li>
+    <h class="menu-title text-xl">Components</li>
 
+    <li class="menu-title">
+      Actions
 
-    <li><a href="{% url design_system.metadata.button.url_path %}">Button</a></li>
-    {% comment %}
-    <!-- <li>
-    <a>
-        <details open>
-            <summary>Form Elements</summary>
-        </details>
-    </a>
-        <ul>
-            <li><a href="{% url 'showcase_badge' %}">Badge</a></li>
-            <li><a href="{% url 'showcase_input' %}">Input</a></li>
-            <li><a href="{% url 'showcase_checkbox' %}">Checkbox</a></li>
-        </ul>
+      <ul>
+        {% for comp_key, comp_meta in design_system.metadata.items %}
+          <li>
+            {% url comp_meta.url_path as component_url %}
+            <a
+              href="{{ component_url }}"
+              class="{% if request.path == component_url %}menu-active{% endif %}"
+              >
+              {{ comp_meta.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </li>
-    <li class="menu-title mt-4">Layouts & Feedback</li>
-    <li><a href="{% url 'showcase_alert' %}">Alert</a></li>
-    <li><a href="{% url 'showcase_card' %}">Card</a></li> -->
-    {% endcomment %}
+      
+
+  
+  <h2 class="menu-title">Action</h2>
 </ul>

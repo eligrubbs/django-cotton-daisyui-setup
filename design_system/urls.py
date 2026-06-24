@@ -1,34 +1,12 @@
-from typing import Optional
-from dataclasses import dataclass
-
 from django.urls import path
 from django.views.generic import TemplateView
 
-
-COMMON_URL_PREFIX="__showcase__"
-APP_NAME="design_system"
-SHOWCASE_URL_NAME="index"
-TEMPLATE_COMMON_PREFIX="showcase/components"
-
-
-@dataclass
-class ComponentInfo:
-    name: str
-    url_path_prefix: str
-    url_name: str
-    template_path_str: str
-    url_path: Optional[str] = None
-    """We will set this for you!"""
-
-    def __post_init__(self):
-        self.url_path = f"{APP_NAME}:{self.url_name}"
-
-
-
-COMPONENTS_METADATA = {
-    "button": ComponentInfo("button", "button", "button", f"{TEMPLATE_COMMON_PREFIX}/button.html"),
-}
-
+from .intermal_data import (
+    APP_NAME,
+    SHOWCASE_URL_NAME,
+    COMMON_URL_PREFIX,
+    COMPONENTS_METADATA
+)
 
 
 class DesignSystemTemplateView(TemplateView):
