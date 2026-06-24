@@ -27,6 +27,7 @@ class ComponentInfo:
     name: str
     """Name displayed on showcase page"""
     category: ComponentCategory
+    """What type of component this is. action, navigation, etc."""
     url_path_prefix: str
     """what appears in the url for this view"""
     url_name: str
