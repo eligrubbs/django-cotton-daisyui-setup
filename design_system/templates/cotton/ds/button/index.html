@@ -1,0 +1,73 @@
+{% comment %}
+DaisyUI Button Component
+
+https://daisyui.com/components/button/
+
+{% endcomment %}
+
+
+<c-vars
+    class=""
+    as="button"
+    color=""
+    style_=""
+    behavior=""
+    size="md"
+    modifier=""
+    :colorClasses="{
+        '': '',
+        'neutral': 'btn-neutral',
+        'primary': 'btn-primary',
+        'secondary': 'btn-secondary',
+        'accent': 'btn-accent',
+        'info': 'btn-info',
+        'success': 'btn-success',
+        'warning': 'btn-warning',
+        'error': 'btn-error'
+    }"
+    :styleClasses="{
+        '': '',
+        'outline': 'btn-outline',
+        'dash': 'btn-dash',
+        'soft': 'btn-soft',
+        'ghost': 'btn-ghost',
+        'link': 'btn-link'
+    }"
+    :behaviorClasses="{
+        '': '',
+        'active': 'btn-active',
+        'disabled': 'btn-disabled'
+    }"
+    :sizeClasses="{
+        '': '',
+        'xs': 'btn-xs',
+        'sm': 'btn-sm',
+        'md': 'btn-md',
+        'lg': 'btn-lg',
+        'xl': 'btn-xl'
+    }"
+    :modifierClasses="{
+        '': '',
+        'wide': 'btn-wide',
+        'block': 'btn-block',
+        'square': 'btn-square',
+        'circle': 'btn-circle'
+    }"
+/>
+
+<{{ as }}
+    class="
+        btn
+        {{ colorClasses|get_item:color }}
+        {{ styleClasses|get_item:style_ }}
+        {{ behaviorClasses|get_item:behavior }}
+        {{ sizeClasses|get_item:size }}
+        {{ modifierClasses|get_item:modifier }}
+        {{ class }}
+    "
+    {{ attrs }}
+>
+
+    {{ slot }}
+  
+</{{ as }}>
