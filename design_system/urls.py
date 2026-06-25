@@ -16,7 +16,8 @@ class DesignSystemTemplateView(TemplateView):
         context['design_system'] = {
             "app_name": APP_NAME,
             "base_url": f"{APP_NAME}:{SHOWCASE_URL_NAME}",
-            "metadata": COMPONENTS_METADATA
+            "metadata": COMPONENTS_METADATA,
+            "colors": ["neutral", "primary", "secondary", "accent", "info", "success", "warning", "error"]
         }
         return context
 

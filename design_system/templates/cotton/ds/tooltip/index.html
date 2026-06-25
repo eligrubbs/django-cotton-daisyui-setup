@@ -1,0 +1,46 @@
+{% comment %}
+DaisyUI Tooltip Component
+
+https://daisyui.com/components/tooltip/
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="div"
+  placement=""
+  color=""
+  open
+  :placementClasses="{
+    '': '',
+    'top': 'tooltip-top',
+    'bottom': 'tooltip-bottom',
+    'left': 'tooltip-left',
+    'right': 'tooltip-right',
+  }"
+  :colorClasses="{
+    '': '',
+    'neutral': 'tooltip-neutral',
+    'primary': 'tooltip-primary',
+    'secondary': 'tooltip-secondary',
+    'accent': 'tooltip-accent',
+    'info': 'tooltip-info',
+    'success': 'tooltip-success',
+    'warning': 'tooltip-warning',
+    'error': 'tooltip-error'
+  }"
+/>
+
+<{{ as }}
+  class="
+  tooltip
+  {{ placementClasses|get_item:placement }}
+  {{ colorClasses|get_item:color }}
+  {% if open %}tooltip-open{% endif %}
+  {{ class }}
+  "
+  {{ attrs }}
+>
+  {{ slot }}
+</{{ as }}>

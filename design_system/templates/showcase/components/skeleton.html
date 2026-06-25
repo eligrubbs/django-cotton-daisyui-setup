@@ -1,0 +1,38 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Progress Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Progress</h2>
+    <p class="text-base-content/70">All available DaisyUI progress colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Skeleton over a background</h3>
+      <c-ds.skeleton class="h-32 w-32"></c-ds.skeleton>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Skeleton - circle with content</h3>
+      <div class="flex w-52 flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <c-ds.skeleton class="h-16 w-16 shrink-0 rounded-full" />
+          <div class="flex flex-col gap-4">
+            <c-ds.skeleton class="h-4 w-20" />
+            <c-ds.skeleton class="h-4 w-28" />
+          </div>
+        </div>
+        <c-ds.skeleton class="h-32 w-full" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Text Animated Gradient</h3>
+      <c-ds.skeleton text as="span">AI is thinking harder...</c-ds.skeleton>
+    </div>
+
+</section>
+{% endblock %}

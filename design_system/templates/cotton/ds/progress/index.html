@@ -1,0 +1,36 @@
+{% comment %}
+DaisyUI Progress Component
+
+https://daisyui.com/components/progress/
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="progress"
+  color=""
+  :colorClasses="{
+    '': '',
+    'neutral': 'progress-neutral',
+    'primary': 'progress-primary',
+    'secondary': 'progress-secondary',
+    'accent': 'progress-accent',
+    'info': 'progress-info',
+    'success': 'progress-success',
+    'warning': 'progress-warning',
+    'error': 'progress-error'
+  }"
+/>
+
+<{{ as }}
+  class="
+    progress
+    {{ colorClasses|get_item:color }}
+    {{ class }}
+  "
+  {{ attrs }}
+>
+
+  {{ slot }}
+
+</{{ as }}>

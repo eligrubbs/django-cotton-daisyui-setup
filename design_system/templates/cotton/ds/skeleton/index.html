@@ -1,0 +1,23 @@
+{% comment %}
+DaisyUI Skeleton Component
+
+https://daisyui.com/components/skeleton/
+
+When using with text, change the `as="span"` to slow down the speed of the scrubbing
+
+{% endcomment %}
+
+<c-vars
+    class=""
+    as="div"
+    text
+/>
+
+<{{ as }}
+  class="skeleton {% if text %}skeleton-text{% endif %} {{ class }}"
+  {{ attrs }}
+>
+
+  {{ slot }}
+
+</{{ as }}>

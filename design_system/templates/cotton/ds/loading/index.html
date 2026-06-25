@@ -1,0 +1,56 @@
+{% comment %}
+DaisyUI Loading Component
+
+https://daisyui.com/components/loading/
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="span"
+  style_=""
+  color=""
+  size=""
+  :styleClasses="{
+    'spinner': 'loading-spinner',
+    'dots': 'loading-dots',
+    'ring': 'loading-ring',
+    'ball': 'loading-ball',
+    'bars': 'loading-bars',
+    'infinity': 'loading-infinity'
+  }"
+  :colorClasses="{
+    '': '',
+    'neutral': 'text-neutral',
+    'primary': 'text-primary',
+    'secondary': 'text-secondary',
+    'accent': 'text-accent',
+    'info': 'text-info',
+    'success': 'text-success',
+    'warning': 'text-warning',
+    'error': 'text-error'
+  }"
+  :sizeClasses="{
+    'xs': 'loading-xs',
+    'sm': 'loading-sm',
+    'md': 'loading-md',
+    'lg': 'loading-lg',
+    'xl': 'loading-xl'
+  }"
+/>
+
+
+<{{ as }}
+  class="
+    loading
+    {{ styleClasses|get_item:style_ }}
+    {{ colorClasses|get_item:color }}
+    {{ sizeClasses|get_item:size }}
+    {{ class }}
+  "
+  {{ attrs }}
+>
+
+  {{ slot }}
+
+</{{ as }}>

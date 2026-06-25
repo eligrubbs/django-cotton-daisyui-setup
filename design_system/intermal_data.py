@@ -57,4 +57,32 @@ COMPONENTS_METADATA = {
         url_name="alert",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/alert.html"
     ),
+    "loading": ComponentInfo(
+        name="Loading",
+        category=ComponentCategory.feedback,
+        url_path_prefix="loading",
+        url_name="loading",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/loading.html"
+    ),
+    "progress": ComponentInfo(
+        name="Progress",
+        category=ComponentCategory.feedback,
+        url_path_prefix="progress",
+        url_name="progress",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/progress.html"
+    ),
+    "skeleton": ComponentInfo(
+        name="Skeleton",
+        category=ComponentCategory.feedback,
+        url_path_prefix="skeleton",
+        url_name="skeleton",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/skeleton.html"
+    ),
+    "tooltip": ComponentInfo(
+        name="Tooltip",
+        category=ComponentCategory.feedback,
+        url_path_prefix="tooltip",
+        url_name="tooltip",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/tooltip.html"
+    ),
 }
