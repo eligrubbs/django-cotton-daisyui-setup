@@ -1,0 +1,95 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Alert Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Alert</h2>
+    <p class="text-base-content/70">All available DaisyUI alert colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Colors</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.alert>None</c-ds.alert>
+            <c-ds.alert color="info">Info</c-ds.alert>
+            <c-ds.alert color="success">Success</c-ds.alert>
+            <c-ds.alert color="warning">Warning</c-ds.alert>
+            <c-ds.alert color="error">Error</c-ds.alert>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Soft Alerts</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.alert style_="soft">None</c-ds.alert>
+            <c-ds.alert color="info" style_="soft">Info</c-ds.alert>
+            <c-ds.alert color="success" style_="soft">Success</c-ds.alert>
+            <c-ds.alert color="warning" style_="soft">Warning</c-ds.alert>
+            <c-ds.alert color="error" style_="soft">Error</c-ds.alert>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Outline Alerts</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.alert style_="outline">None</c-ds.alert>
+            <c-ds.alert color="info" style_="outline">Info</c-ds.alert>
+            <c-ds.alert color="success" style_="outline">Success</c-ds.alert>
+            <c-ds.alert color="warning" style_="outline">Warning</c-ds.alert>
+            <c-ds.alert color="error" style_="outline">Error</c-ds.alert>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Dash Alerts</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.alert style_="dash">None</c-ds.alert>
+            <c-ds.alert color="info" style_="dash">Info</c-ds.alert>
+            <c-ds.alert color="success" style_="dash">Success</c-ds.alert>
+            <c-ds.alert color="warning" style_="dash">Warning</c-ds.alert>
+            <c-ds.alert color="error" style_="dash">Error</c-ds.alert>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Direction</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.alert color="info" direction="vertical">
+              <p>Vertical</p>
+              <p>Alert</p>
+            </c-ds.alert>
+
+            <c-ds.alert direction="vertical">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info h-6 w-6 shrink-0">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <h3 class="font-bold">New vertical message!</h3>
+                <div class="text-xs">You have 1 unread message</div>
+              </div>
+              <c-ds.button size="sm">See</c-ds.button>
+            </c-ds.alert>
+            
+            <c-ds.alert direction="horizontal">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info h-6 w-6 shrink-0">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <h3 class="font-bold">New horizontal message!</h3>
+                <div class="text-xs">You have 1 unread message</div>
+              </div>
+              <c-ds.button size="sm">See</c-ds.button>
+            </c-ds.alert>
+
+            <c-ds.alert color="info" direction="horizontal">
+              <p>Horizontal</p>
+              <p>Alert</p>
+            </c-ds.alert>
+        </div>
+    </div>
+
+
+</section>
+{% endblock %}

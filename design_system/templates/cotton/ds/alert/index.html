@@ -1,0 +1,50 @@
+{% comment %}
+DaisyUI Alert Component
+
+https://daisyui.com/components/alert/
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="div"
+  color=""
+  style_=""
+  direction=""
+  :colorClasses="{
+    '': '',
+    'info': 'alert-info',
+    'success': 'alert-success',
+    'warning': 'alert-warning',
+    'error': 'alert-error'
+  }"
+  :styleClasses="{
+    '': '',
+    'outline': 'alert-outline',
+    'dash': 'alert-dash',
+    'soft': 'alert-soft'
+  }"
+  :directionClasses="{
+    '': '',
+    'vertical': 'alert-vertical',
+    'horizontal': 'alert-horizontal',
+  }"
+/>
+
+
+<{{ as }}
+  role="alert"
+  class="
+    alert
+    {{ colorClasses|get_item:color }}
+    {{ styleClasses|get_item:style_ }}
+    {{ directionClasses|get_item:direction }}
+    {{ class }}
+  "
+  {{ attrs }}
+>
+
+  {{ slot }}
+
+</{{ as }}>

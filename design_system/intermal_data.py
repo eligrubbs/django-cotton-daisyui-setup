@@ -50,4 +50,11 @@ COMPONENTS_METADATA = {
         url_name="button",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/button.html"
     ),
+    "alert": ComponentInfo(
+        name="Alert",
+        category=ComponentCategory.feedback,
+        url_path_prefix="alert",
+        url_name="alert",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/alert.html"
+    ),
 }
