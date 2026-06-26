@@ -106,4 +106,11 @@ COMPONENTS_METADATA = {
         url_name="input",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/input.html"
     ),
+    "select": ComponentInfo(
+        name="Select",
+        category=ComponentCategory.data_input,
+        url_path_prefix="select",
+        url_name="select",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/select.html"
+    ),
 }
