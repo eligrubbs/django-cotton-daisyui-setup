@@ -1,0 +1,45 @@
+{% comment %}
+
+{% endcomment %}
+
+<c-vars
+    class=""
+    color=""
+    size=""
+    style_=""
+    validate
+    :colorClasses="{
+      '': '',
+      'neutral': 'textarea-neutral',
+      'primary': 'textarea-primary',
+      'secondary': 'textarea-secondary',
+      'accent': 'textarea-accent',
+      'info': 'textarea-info',
+      'success': 'textarea-success',
+      'warning': 'textarea-warning',
+      'error': 'textarea-error'
+    }"
+    :sizeClasses="{
+        'xs': 'textarea-xs',
+        'sm': 'textarea-sm',
+        'md': 'textarea-md',
+        'lg': 'textarea-lg',
+        'xl': 'textarea-xl'
+    }"
+    :styleClasses="{
+      '': '',
+      'ghost': 'textarea-ghost',
+    }"
+/>
+
+
+<textarea
+  class="
+    textarea
+    {{ colorClasses|get_item:color }}
+    {{ sizeClasses|get_item:size }}
+    {{ styleClasses|get_item:style_ }}
+    {{ class }}
+  "
+  {{ attrs }}
+>{{ slot }}</textarea>

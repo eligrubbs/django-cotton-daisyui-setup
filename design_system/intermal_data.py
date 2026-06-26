@@ -113,4 +113,11 @@ COMPONENTS_METADATA = {
         url_name="select",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/select.html"
     ),
+    "textarea": ComponentInfo(
+        name="Textarea",
+        category=ComponentCategory.data_input,
+        url_path_prefix="textarea",
+        url_name="textarea",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/textarea.html"
+    )
 }

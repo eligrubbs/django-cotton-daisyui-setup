@@ -65,16 +65,10 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] tab
 - [ ] table
 - [ ] text-rotate
-- [ ] textarea
+- [x] textarea
 - [ ] theme-controller
 - [ ] timeline
 - [ ] toast
 - [ ] toggle
 - [x] tooltip
 - [x] validator
-
-## Summary
-
-- **Total Components:** 68
-- **Implemented:** 11
-- **Remaining:** 57
