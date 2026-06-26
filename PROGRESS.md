@@ -4,71 +4,91 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 
 ## Implementation Progress
 
-- [ ] accordion
-- [x] alert
-- [ ] aura
-- [ ] avatar
-- [ ] badge
-- [ ] breadcrumbs
-- [x] button
-- [ ] calendar
-- [ ] card
-- [ ] carousel
-- [ ] chat
-- [x] checkbox
-- [ ] collapse
-- [ ] countdown
-- [ ] diff
-- [ ] divider
-- [ ] dock
-- [ ] drawer
-- [ ] dropdown
-- [ ] fab
-- [x] fieldset
-- [ ] file-input
-- [ ] filter
-- [ ] footer
-- [ ] hero
-- [ ] hover-3d
-- [ ] hover-gallery
-- [ ] indicator
-- [x] input
-- [ ] join
-- [ ] kbd
-- [ ] label
-- [ ] link
-- [ ] list
-- [x] loading
-- [ ] mask
-- [ ] megamenu
-- [ ] menu
-- [ ] mockup-browser
-- [ ] mockup-code
-- [ ] mockup-phone
-- [ ] mockup-window
-- [ ] modal
-- [ ] navbar
-- [ ] otp
-- [ ] pagination
-- [x] progress
-- [ ] radial-progress
-- [ ] radio
-- [ ] range
-- [ ] rating
-- [x] select
-- [x] skeleton
-- [ ] stack
-- [ ] stat
-- [ ] status
-- [ ] steps
-- [ ] swap
-- [ ] tab
-- [ ] table
-- [ ] text-rotate
-- [x] textarea
-- [ ] theme-controller
-- [ ] timeline
-- [ ] toast
-- [ ] toggle
-- [x] tooltip
-- [x] validator
+### Actions
+
+- [X] Button
+- [ ] Dropdown
+- [ ] FAB / Speed Dial
+- [ ] Modal
+- [ ] Swap
+- [ ] Theme Controller
+
+### Data display
+
+- [ ] Accordion
+- [ ] Avatar
+- [ ] Aura
+- [ ] Badge
+- [ ] Card
+- [ ] Carousel
+- [ ] Chat bubble
+- [ ] Collapse
+- [ ] Countdown
+- [ ] Diff
+- [ ] Hover 3D card
+- [ ] Hover Gallery
+- [ ] Kbd
+- [ ] List
+- [ ] Stat
+- [ ] Status
+- [ ] Table
+- [ ] Text Rotate
+- [ ] Timeline
+
+### Navigation
+
+- [ ] Breadcrumbs
+- [ ] Dock
+- [ ] Link
+- [ ] Megamenu
+- [ ] Menu
+- [ ] Navbar
+- [ ] Pagination
+- [ ] Steps
+- [ ] Tab
+
+### Feedback
+
+- [X] Alert
+- [X] Loading
+- [X] Progress
+- [ ] Radial Progress
+- [X] Skeleton
+- [ ] Toast
+- [X] Tooltip
+
+### Data input
+
+- [ ] Calendar
+- [X] Checkbox
+- [X] Fieldset
+- [ ] File Input
+- [ ] Filter
+- [ ] Label
+- [ ] Radio
+- [ ] Range
+- [ ] Rating
+- [X] Select
+- [X] Input field
+- [X] Textarea
+- [X] Toggle
+- [X] Validator
+- [ ] OTP
+
+### Layout
+
+- [ ] Divider
+- [ ] Drawer sidebar
+- [ ] Footer
+- [ ] Hero
+- [ ] Indicator
+- [ ] Join (group items)
+- [ ] Mask
+- [ ] Stack
+
+### Mockup
+
+- [ ] Browser
+- [ ] Code
+- [ ] Phone
+- [ ] Window
