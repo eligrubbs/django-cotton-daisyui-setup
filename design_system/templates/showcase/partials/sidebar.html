@@ -8,6 +8,7 @@
 <ul class="menu menu-md w-full p-0">
     <h class="menu-title text-xl">Components</li>
 
+
     <li class="menu-title">
       Actions
 
@@ -27,6 +28,49 @@
         {% endfor %}
       </ul>
     </li>
+
+
+    <li class="menu-title">
+      Data display
+
+      <ul>
+        {% for comp_key, comp_meta in design_system.metadata.items %}
+          {% if comp_meta.category == 'data_display' %}
+            <li>
+              {% url comp_meta.url_path as component_url %}
+              <a
+                href="{{ component_url }}"
+                class="{% if request.path == component_url %}menu-active{% endif %}"
+                >
+                {{ comp_meta.name }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+
+
+    <li class="menu-title">
+      Navigation
+
+      <ul>
+        {% for comp_key, comp_meta in design_system.metadata.items %}
+          {% if comp_meta.category == 'navigation' %}
+            <li>
+              {% url comp_meta.url_path as component_url %}
+              <a
+                href="{{ component_url }}"
+                class="{% if request.path == component_url %}menu-active{% endif %}"
+                >
+                {{ comp_meta.name }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+
       
     <li class="menu-title">
       Feedback
@@ -54,6 +98,48 @@
       <ul>
         {% for comp_key, comp_meta in design_system.metadata.items %}
           {% if comp_meta.category == 'data_input' %}
+            <li>
+              {% url comp_meta.url_path as component_url %}
+              <a
+                href="{{ component_url }}"
+                class="{% if request.path == component_url %}menu-active{% endif %}"
+                >
+                {{ comp_meta.name }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+
+
+    <li class="menu-title">
+      Layout
+
+      <ul>
+        {% for comp_key, comp_meta in design_system.metadata.items %}
+          {% if comp_meta.category == 'layout' %}
+            <li>
+              {% url comp_meta.url_path as component_url %}
+              <a
+                href="{{ component_url }}"
+                class="{% if request.path == component_url %}menu-active{% endif %}"
+                >
+                {{ comp_meta.name }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+
+
+    <li class="menu-title">
+      Mockup
+
+      <ul>
+        {% for comp_key, comp_meta in design_system.metadata.items %}
+          {% if comp_meta.category == 'mockup' %}
             <li>
               {% url comp_meta.url_path as component_url %}
               <a

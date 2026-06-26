@@ -126,5 +126,12 @@ COMPONENTS_METADATA = {
         url_path_prefix="toggle",
         url_name="toggle",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/toggle.html"
+    ),
+    "kbd": ComponentInfo(
+        name="Kbd",
+        category=ComponentCategory.data_display,
+        url_path_prefix="kbd",
+        url_name="kbd",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/kbd.html"
     )
 }
