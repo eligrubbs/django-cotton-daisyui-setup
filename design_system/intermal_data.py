@@ -119,5 +119,12 @@ COMPONENTS_METADATA = {
         url_path_prefix="textarea",
         url_name="textarea",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/textarea.html"
+    ),
+    "toggle": ComponentInfo(
+        name="Toggle",
+        category=ComponentCategory.data_input,
+        url_path_prefix="toggle",
+        url_name="toggle",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/toggle.html"
     )
 }

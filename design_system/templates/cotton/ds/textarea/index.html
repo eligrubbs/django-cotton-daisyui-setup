@@ -1,4 +1,7 @@
 {% comment %}
+DaisyUI Textarea Component
+
+https://daisyui.com/components/textarea/
 
 {% endcomment %}
 
@@ -39,6 +42,7 @@
     {{ colorClasses|get_item:color }}
     {{ sizeClasses|get_item:size }}
     {{ styleClasses|get_item:style_ }}
+    {% if validate %}validator{% endif %}
     {{ class }}
   "
   {{ attrs }}
