@@ -133,5 +133,12 @@ COMPONENTS_METADATA = {
         url_path_prefix="kbd",
         url_name="kbd",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/kbd.html"
+    ),
+    "badge": ComponentInfo(
+        name="Badge",
+        category=ComponentCategory.data_display,
+        url_path_prefix="badge",
+        url_name="badge",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/badge.html"
     )
 }

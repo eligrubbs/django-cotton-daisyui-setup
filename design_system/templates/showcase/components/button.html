@@ -10,90 +10,61 @@
 
 <section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
     <div>
-        <h3 class="text-lg font-semibold mb-4">Colors</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary">Primary</c-ds.button>
-            <c-ds.button color="secondary">Secondary</c-ds.button>
-            <c-ds.button color="accent">Accent</c-ds.button>
-            <c-ds.button color="neutral">Neutral</c-ds.button>
-            <c-ds.button color="info">Info</c-ds.button>
-            <c-ds.button color="success">Success</c-ds.button>
-            <c-ds.button color="warning">Warning</c-ds.button>
-            <c-ds.button color="error">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Colors</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
     </div>
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Soft Buttons</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary" style_="soft">Primary</c-ds.button>
-            <c-ds.button color="secondary" style_="soft">Secondary</c-ds.button>
-            <c-ds.button color="accent" style_="soft">Accent</c-ds.button>
-            <c-ds.button color="neutral" style_="soft">Neutral</c-ds.button>
-            <c-ds.button color="info" style_="soft">Info</c-ds.button>
-            <c-ds.button color="success" style_="soft">Success</c-ds.button>
-            <c-ds.button color="warning" style_="soft">Warning</c-ds.button>
-            <c-ds.button color="error" style_="soft">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Soft Buttons</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}" style_="soft">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
     </div>
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Outline Buttons</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary" style_="outline">Primary</c-ds.button>
-            <c-ds.button color="secondary" style_="outline">Secondary</c-ds.button>
-            <c-ds.button color="accent" style_="outline">Accent</c-ds.button>
-            <c-ds.button color="neutral" style_="outline">Neutral</c-ds.button>
-            <c-ds.button color="info" style_="outline">Info</c-ds.button>
-            <c-ds.button color="success" style_="outline">Success</c-ds.button>
-            <c-ds.button color="warning" style_="outline">Warning</c-ds.button>
-            <c-ds.button color="error" style_="outline">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Outline Buttons</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}" style_="outline">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
+
     </div>
 
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Dash Buttons</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary" style_="dash">Primary</c-ds.button>
-            <c-ds.button color="secondary" style_="dash">Secondary</c-ds.button>
-            <c-ds.button color="accent" style_="dash">Accent</c-ds.button>
-            <c-ds.button color="neutral" style_="dash">Neutral</c-ds.button>
-            <c-ds.button color="info" style_="dash">Info</c-ds.button>
-            <c-ds.button color="success" style_="dash">Success</c-ds.button>
-            <c-ds.button color="warning" style_="dash">Warning</c-ds.button>
-            <c-ds.button color="error" style_="dash">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Dash Buttons</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}" style_="dash">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
     </div>
 
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Ghost Buttons</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary" style_="ghost">Primary</c-ds.button>
-            <c-ds.button color="secondary" style_="ghost">Secondary</c-ds.button>
-            <c-ds.button color="accent" style_="ghost">Accent</c-ds.button>
-            <c-ds.button color="neutral" style_="ghost">Neutral</c-ds.button>
-            <c-ds.button color="info" style_="ghost">Info</c-ds.button>
-            <c-ds.button color="success" style_="ghost">Success</c-ds.button>
-            <c-ds.button color="warning" style_="ghost">Warning</c-ds.button>
-            <c-ds.button color="error" style_="ghost">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Ghost Buttons</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}" style_="ghost">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
     </div>
 
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Link Buttons</h3>
-        <div class="flex flex-wrap gap-4">
-            <c-ds.button color="primary" style_="link">Primary</c-ds.button>
-            <c-ds.button color="secondary" style_="link">Secondary</c-ds.button>
-            <c-ds.button color="accent" style_="link">Accent</c-ds.button>
-            <c-ds.button color="neutral" style_="link">Neutral</c-ds.button>
-            <c-ds.button color="info" style_="link">Info</c-ds.button>
-            <c-ds.button color="success" style_="link">Success</c-ds.button>
-            <c-ds.button color="warning" style_="link">Warning</c-ds.button>
-            <c-ds.button color="error" style_="link">Error</c-ds.button>
-        </div>
+      <h3 class="text-lg font-semibold mb-4">Link Buttons</h3>
+      <div class="flex flex-wrap gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.button color="{{ col }}" style_="link">{{ col }}</c-ds.button>
+        {% endfor %}
+      </div>
     </div>
 
     <div>
