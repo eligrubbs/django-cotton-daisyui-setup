@@ -1,0 +1,60 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Input Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Input</h2>
+    <p class="text-base-content/70">All available DaisyUI input colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Disabled</h3>
+      <div class="flex flex-wrap gap-4">
+        <c-ds.input placeholder="You can't touch this" disabled type="text"/>
+          <c-ds.input size="xs" type="text" placeholder="Xsmall"></c-ds.input>
+          <c-ds.input size="sm" type="text" placeholder="Small"></c-ds.input>
+          <c-ds.input size="md" type="text" placeholder="Medium"></c-ds.input>
+          <c-ds.input size="lg" type="text" placeholder="Large"></c-ds.input>
+          <c-ds.input size="xl" type="text" placeholder="Xlarge"></c-ds.input>
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Colors</h3>
+      <div class="flex flex-wrap gap-4">
+        <c-ds.input type="text" placeholder="neutral" class="input input-neutral" />
+
+        <c-ds.input type="text" placeholder="Primary" class="input input-primary" />
+        <c-ds.input type="text" placeholder="Secondary" class="input input-secondary" />
+        <c-ds.input type="text" placeholder="Accent" class="input input-accent" />
+
+        <c-ds.input type="text" placeholder="Info" class="input input-info" />
+        <c-ds.input type="text" placeholder="Success" class="input input-success" />
+        <c-ds.input type="text" placeholder="Warning" class="input input-warning" />
+        <c-ds.input type="text" placeholder="Error" class="input input-error" />
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">With fieldset and legend</h3>
+      <div class="flex flex-wrap gap-4">
+        <c-ds.fieldset class="bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <c-ds.fieldset.legend>What is your name?</c-ds.fieldset.legend>
+
+          <c-ds.input type="text" placeholder="Type here" />
+
+          <p class="label">Optional</p>
+
+        </c-ds.fieldset>
+  
+      </div>
+    </div>
+
+
+</section>
+{% endblock %}

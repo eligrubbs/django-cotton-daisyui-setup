@@ -1,0 +1,24 @@
+{% comment %}
+DaisyUI Fieldset Component
+
+https://daisyui.com/components/fieldset/
+
+You can provide the contents of a pre-populated legend field using the legend cvar,
+or you can use the compound component `fieldset.legend`.
+
+You really only use the legend named slot
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  legend=""
+/>
+
+<fieldset class="fieldset {{class}}">
+  {% if legend %}
+    <legend class="fieldset-legend">{{legend}}</legend>
+  {% endif %}
+
+  {{ slot }}
+</fieldset>

@@ -85,4 +85,25 @@ COMPONENTS_METADATA = {
         url_name="tooltip",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/tooltip.html"
     ),
+    "checkbox": ComponentInfo(
+        name="Checkbox",
+        category=ComponentCategory.data_input,
+        url_path_prefix="checkbox",
+        url_name="checkbox",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/checkbox.html"
+    ),
+    "fieldset": ComponentInfo(
+        name="Fieldset",
+        category=ComponentCategory.data_input,
+        url_path_prefix="fieldset",
+        url_name="fieldset",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/fieldset.html"
+    ),
+    "input": ComponentInfo(
+        name="Input",
+        category=ComponentCategory.data_input,
+        url_path_prefix="input",
+        url_name="input",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/input.html"
+    ),
 }

@@ -1,0 +1,54 @@
+{% comment %}
+DaisyUI Checkbox Component
+
+https://daisyui.com/components/checkbox/
+
+Not included in this component is the ability to set an "indeterminate" state via javascript 
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="input"
+  type="checkbox"
+  color=""
+  size=""
+  checked
+  :colorClasses="{
+    '': '',
+    'neutral': 'checkbox-neutral',
+    'primary': 'checkbox-primary',
+    'secondary': 'checkbox-secondary',
+    'accent': 'checkbox-accent',
+    'info': 'checkbox-info',
+    'success': 'checkbox-success',
+    'warning': 'checkbox-warning',
+    'error': 'checkbox-error'
+  }"
+  :sizeClasses="{
+    '': '',
+    'xs': 'checkbox-xs',
+    'sm': 'checkbox-sm',
+    'md': 'checkbox-md',
+    'lg': 'checkbox-lg',
+    'xl': 'checkbox-xl'
+  }"
+/>
+
+
+<{{ as }}
+  class="
+    checkbox
+    {{ colorClasses|get_item:color }}
+    {{ sizeClasses|get_item:size }}
+    {{ class }}
+  "
+  type = {{ type }}
+  {% if checked %}checked=checked{% endif %}
+  {{ attrs }}
+>
+
+  {{ slot }}
+
+</{{ as }}>
