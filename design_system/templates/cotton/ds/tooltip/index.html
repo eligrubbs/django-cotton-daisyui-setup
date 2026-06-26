@@ -10,6 +10,7 @@ https://daisyui.com/components/tooltip/
   class=""
   as="div"
   placement=""
+  alignment=""
   color=""
   open
   :placementClasses="{
@@ -18,6 +19,12 @@ https://daisyui.com/components/tooltip/
     'bottom': 'tooltip-bottom',
     'left': 'tooltip-left',
     'right': 'tooltip-right',
+  }"
+  :alignmentClasses="{
+    '':'',
+    'start': 'tooltip-start',
+    'center': 'tooltip-center',
+    'end': 'tooltip-end',
   }"
   :colorClasses="{
     '': '',
@@ -36,6 +43,7 @@ https://daisyui.com/components/tooltip/
   class="
   tooltip
   {{ placementClasses|get_item:placement }}
+  {{ alignmentClasses|get_item:alignment }}
   {{ colorClasses|get_item:color }}
   {% if open %}tooltip-open{% endif %}
   {{ class }}

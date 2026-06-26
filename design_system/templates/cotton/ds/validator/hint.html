@@ -1,0 +1,24 @@
+{% comment %}
+DaisyUI validator hint
+
+https://daisyui.com/components/validator/
+
+The regular validator is just a class, so it is added to the input, select, and textarea components as the 
+DaisyUI docs says are the ones it applies to.
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="div"
+/>
+
+<{{ as }}
+  class="validator-hint {{ class }}"
+  {{ attrs }}
+>
+
+{{ slot }}
+
+</{{ as }}>

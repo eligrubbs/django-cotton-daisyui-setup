@@ -12,14 +12,51 @@
 
     <div>
       <h3 class="text-lg font-semibold mb-4">Tooltip Colors</h3>
-        <div class="flex flex-wrap gap-4 w-56">
-          {% for col in design_system.colors %}
+      <div class="flex flex-wrap gap-6 gap-y-10">
+        {% for col in design_system.colors %}
+          <div>
             <c-ds.tooltip color="{{col}}" data-tip="hello">
               <c-ds.button>Hover me</c-ds.button>
             </c-ds.tooltip>
-          {% endfor %}
-        </div>
+            <c-ds.tooltip color="{{col}}" data-tip="hello" open>
+              <c-ds.button>Forced open</c-ds.button>
+            </c-ds.tooltip>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
 
+    <div>
+      <h3 class="text-lg font-semibold mb-16">Placement</h3>
+      <div class="pl-16">
+        <c-ds.tooltip data-tip="hello" placement="left" open>
+          <c-ds.button>Left</c-ds.button>
+        </c-ds.tooltip>
+        <c-ds.tooltip data-tip="hello" placement="top" open>
+          <c-ds.button>Top</c-ds.button>
+        </c-ds.tooltip>
+        <c-ds.tooltip data-tip="hello" placement="bottom" open>
+          <c-ds.button>Bottom</c-ds.button>
+        </c-ds.tooltip>
+        <c-ds.tooltip data-tip="hello" placement="right" open>
+          <c-ds.button>Right</c-ds.button>
+        </c-ds.tooltip>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-16">Alignment</h3>
+      <div>
+        <c-ds.tooltip data-tip="hello" alignment="start" open>
+          <c-ds.button>Start</c-ds.button>
+        </c-ds.tooltip>
+        <c-ds.tooltip data-tip="hello" alignment="middle" open>
+          <c-ds.button>Middle</c-ds.button>
+        </c-ds.tooltip>
+        <c-ds.tooltip data-tip="hello" alignment="end" open>
+          <c-ds.button>End</c-ds.button>
+        </c-ds.tooltip>
+      </div>
     </div>
 
     <div>
