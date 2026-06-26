@@ -1,0 +1,49 @@
+{% comment %}
+DaisyUI Status Component
+
+https://daisyui.com/components/status/
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  color=""
+  size=""
+  animation=""
+  :colorClasses="{
+    '': '',
+    'neutral': 'status-neutral',
+    'primary': 'status-primary',
+    'secondary': 'status-secondary',
+    'accent': 'status-accent',
+    'info': 'status-info',
+    'success': 'status-success',
+    'warning': 'status-warning',
+    'error': 'status-error'
+  }"
+  :sizeClasses="{
+    '': '',
+    'xs': 'status-xs',
+    'sm': 'status-sm',
+    'md': 'status-md',
+    'lg': 'status-lg',
+    'xl': 'status-xl'
+  }"
+  :animationClasses="{
+    '': '',
+    'ping': 'animate-ping',
+    'bounce': 'animate-boucne'
+  }"
+/>
+
+{% if animation != "ping" %}
+  <div
+    class="status {{ colorClasses|get_item:color }} {{ sizeClasses|get_item:size }} {{ animationClasses|get_item:animation }} {{ class }}"
+  ></div>
+{% else %}
+  <div class="inline-grid *:[grid-area:1/1]">
+    <div class="status {{ colorClasses|get_item:color }} {{ sizeClasses|get_item:size }} {{ animationClasses|get_item:animation }} {{ class }}"></div>
+    <div class="status {{ colorClasses|get_item:color }} {{ sizeClasses|get_item:size }} {{ class }}"></div>
+  </div>
+  <p>Bob</p>
+{% endif %}

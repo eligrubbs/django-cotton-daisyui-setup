@@ -1,0 +1,52 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Status Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Status</h2>
+    <p class="text-base-content/70">All available DaisyUI status colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Size</h3>
+      <div class="flex flex-row gap-2">
+        <c-ds.status size="xs"></c-ds.status>
+        <c-ds.status size="sm"></c-ds.status>
+        <c-ds.status size="md"></c-ds.status>
+        <c-ds.status size="lg"></c-ds.status>
+        <c-ds.status size="xl"></c-ds.status>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Colors</h3>
+      <div class="flex flex-row gap-2">
+        {% for col in design_system.colors %}
+          <c-ds.status color="{{col}}"></c-ds.status>  
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Bounce</h3>
+      <div class="flex flex-row gap-2">
+        {% for col in design_system.colors %}
+          <c-ds.status color="{{col}}" animation="bounce"></c-ds.status>  
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Ping</h3>
+      <div class="flex flex-row gap-2">
+        {% for col in design_system.colors %}
+          <c-ds.status color="{{col}}" animation="ping"></c-ds.status>  
+        {% endfor %}
+      </div>
+    </div>
+
+</section>
+{% endblock %}

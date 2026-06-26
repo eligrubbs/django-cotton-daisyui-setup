@@ -140,5 +140,12 @@ COMPONENTS_METADATA = {
         url_path_prefix="badge",
         url_name="badge",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/badge.html"
+    ),
+    "status": ComponentInfo(
+        name="Status",
+        category=ComponentCategory.data_display,
+        url_path_prefix="status",
+        url_name="status",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/status.html"
     )
 }
