@@ -147,5 +147,12 @@ COMPONENTS_METADATA = {
         url_path_prefix="status",
         url_name="status",
         template_path_str=f"{TEMPLATE_COMMON_PREFIX}/status.html"
-    )
+    ),
+    "table": ComponentInfo(
+        name="Table",
+        category=ComponentCategory.data_display,
+        url_path_prefix="table",
+        url_name="table",
+        template_path_str=f"{TEMPLATE_COMMON_PREFIX}/table.html"
+    ),
 }

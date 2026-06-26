@@ -1,0 +1,38 @@
+{% comment %}
+DaisyUI Table component
+
+https://daisyui.com/components/table/
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  size=""
+  zebra
+  pinRows
+  pinCols
+  :sizeClasses="{
+    '': '',
+    'xs': 'table-xs',
+    'sm': 'table-sm',
+    'md': 'table-md',
+    'lg': 'table-lg',
+    'xl': 'table-xl'
+  }"
+/>
+
+
+<table
+  class="
+  table
+  {{ sizeClasses|get_item:size }}
+  {% if zebra %}table-zebra{% endif %}
+  {% if pinRows %}table-pin-rows{% endif %}
+  {% if pinCols %}table-pin-cols{% endif %}
+  {{ class }}
+  "
+  {{ attrs }}
+>
+  {{ slot }}
+</table>

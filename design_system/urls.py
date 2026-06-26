@@ -17,7 +17,8 @@ class DesignSystemTemplateView(TemplateView):
             "app_name": APP_NAME,
             "base_url": f"{APP_NAME}:{SHOWCASE_URL_NAME}",
             "metadata": COMPONENTS_METADATA,
-            "colors": ["neutral", "primary", "secondary", "accent", "info", "success", "warning", "error"]
+            "colors": ["neutral", "primary", "secondary", "accent", "info", "success", "warning", "error"],
+            "sizes": ["xs", "sm", "md", "lg", "xl"]
         }
         return context
 
