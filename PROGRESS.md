@@ -1,0 +1,80 @@
+# Progress towards 110% DaisyUI coverage
+
+This file tracks the progress of implementing all [daisyUI](https://daisyui.com/) components as django-cotton components in this repository.
+
+## Implementation Progress
+
+- [ ] accordion
+- [x] alert
+- [ ] aura
+- [ ] avatar
+- [ ] badge
+- [ ] breadcrumbs
+- [x] button
+- [ ] calendar
+- [ ] card
+- [ ] carousel
+- [ ] chat
+- [x] checkbox
+- [ ] collapse
+- [ ] countdown
+- [ ] diff
+- [ ] divider
+- [ ] dock
+- [ ] drawer
+- [ ] dropdown
+- [ ] fab
+- [x] fieldset
+- [ ] file-input
+- [ ] filter
+- [ ] footer
+- [ ] hero
+- [ ] hover-3d
+- [ ] hover-gallery
+- [ ] indicator
+- [x] input
+- [ ] join
+- [ ] kbd
+- [ ] label
+- [ ] link
+- [ ] list
+- [x] loading
+- [ ] mask
+- [ ] megamenu
+- [ ] menu
+- [ ] mockup-browser
+- [ ] mockup-code
+- [ ] mockup-phone
+- [ ] mockup-window
+- [ ] modal
+- [ ] navbar
+- [ ] otp
+- [ ] pagination
+- [x] progress
+- [ ] radial-progress
+- [ ] radio
+- [ ] range
+- [ ] rating
+- [x] select
+- [x] skeleton
+- [ ] stack
+- [ ] stat
+- [ ] status
+- [ ] steps
+- [ ] swap
+- [ ] tab
+- [ ] table
+- [ ] text-rotate
+- [ ] textarea
+- [ ] theme-controller
+- [ ] timeline
+- [ ] toast
+- [ ] toggle
+- [x] tooltip
+- [x] validator
+
+## Summary
+
+- **Total Components:** 68
+- **Implemented:** 11
+- **Remaining:** 57
