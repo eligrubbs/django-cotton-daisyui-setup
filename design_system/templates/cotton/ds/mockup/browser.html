@@ -1,0 +1,14 @@
+{% comment %}
+DiasyUI Mockup Browser component
+
+https://daisyui.com/components/mockup-browser/
+
+{% endcomment %}
+
+
+<c-vars class="" url="" />
+
+<div class="mockup-browser {{ class }}" {{ attrs }}>
+    {% if url %}<div class="mockup-browser-toolbar"><div class="input">{{ url }}</div></div>{% endif %}
+    {{ slot }}
+</div>

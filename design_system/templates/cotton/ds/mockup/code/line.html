@@ -1,0 +1,42 @@
+
+<c-vars
+  class=""
+  prefix=""
+  color=""
+  highlighted
+  :colorClasses="{
+    '': '',
+    'neutral': 'text-neutral',
+    'primary': 'text-primary',
+    'secondary': 'text-secondary',
+    'accent': 'text-accent',
+    'info': 'text-info',
+    'success': 'text-success',
+    'warning': 'text-warning',
+    'error': 'text-error'
+  }"
+  :highlightedColorClasses="{
+    '': '',
+    'neutral': 'bg-neutral text-neutral-content',
+    'primary': 'bg-primary text-primary-content',
+    'secondary': 'bg-secondary text-secondary-content',
+    'accent': 'bg-accent text-accent-content',
+    'info': 'bg-info text-info-content',
+    'success': 'bg-success text-success-content',
+    'warning': 'bg-warning text-warning-content',
+    'error': 'bg-error text-error-content'
+  }"
+/>
+
+<pre
+  data-prefix="{{ prefix }}"
+  class="
+  {% if highlighted %}
+  {{ highlightedColorClasses|get_item:color }}  
+  {% else %}
+  {{ colorClasses|get_item:color }}
+  {% endif %}
+  {{ class }}
+  "
+  {{ attrs }}
+><code>{{ slot }}</code></pre>

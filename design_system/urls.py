@@ -33,7 +33,7 @@ urlpatterns = (
     [
         path(
             f"{COMMON_URL_PREFIX}/{x.url_path_prefix}",
-            DesignSystemTemplateView.as_view(template_name=x.template_path_str),
+            DesignSystemTemplateView.as_view(template_name=x.showcase_template_path_str),
             name=x.url_name
         ) for _, x in COMPONENTS_METADATA.items()
     ]

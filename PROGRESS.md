@@ -6,7 +6,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 
 ### Actions
 
-- [X] Button
+- [X] [Button](./design_system/templates/cotton/ds/button/index.html)
 - [ ] Dropdown
 - [ ] FAB / Speed Dial
 - [ ] Modal
@@ -18,7 +18,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Accordion
 - [ ] Avatar
 - [ ] Aura
-- [ ] Badge
+- [ ] [Badge](./design_system/templates/cotton/ds/badge/index.html)
 - [ ] Card
 - [ ] Carousel
 - [ ] Chat bubble
@@ -27,11 +27,11 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Diff
 - [ ] Hover 3D card
 - [ ] Hover Gallery
-- [ ] Kbd
+- [X] [Kbd](./design_system/templates/cotton/ds/kbd/index.html)
 - [ ] List
 - [ ] Stat
-- [ ] Status
-- [ ] Table
+- [X] [Status](./design_system/templates/cotton/ds/status/index.html)
+- [X] [Table](./design_system/templates/cotton/ds/table/index.html)
 - [ ] Text Rotate
 - [ ] Timeline
 
@@ -49,30 +49,30 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 
 ### Feedback
 
-- [X] Alert
-- [X] Loading
-- [X] Progress
+- [X] [Alert](./design_system/templates/cotton/ds/alert/index.html)
+- [X] [Loading](./design_system/templates/cotton/ds/loading/index.html)
+- [X] [Progress](./design_system/templates/cotton/ds/progress/index.html)
 - [ ] Radial Progress
-- [X] Skeleton
+- [X] [Skeleton](./design_system/templates/cotton/ds/skeleton/index.html)
 - [ ] Toast
-- [X] Tooltip
+- [X] [Tooltip](./design_system/templates/cotton/ds/tooltip/index.html)
 
 ### Data input
 
 - [ ] Calendar
-- [X] Checkbox
-- [X] Fieldset
+- [X] [Checkbox](./design_system/templates/cotton/ds/checkbox/index.html)
+- [X] [Fieldset](./design_system/templates/cotton/ds/fieldset/index.html)
 - [ ] File Input
 - [ ] Filter
 - [ ] Label
 - [ ] Radio
 - [ ] Range
 - [ ] Rating
-- [X] Select
-- [X] Input field
-- [X] Textarea
-- [X] Toggle
-- [X] Validator
+- [X] [Select](./design_system/templates/cotton/ds/select/index.html)
+- [X] [Input field](./design_system/templates/cotton/ds/input/index.html)
+- [X] [Textarea](./design_system/templates/cotton/ds/textarea/index.html)
+- [X] [Toggle](./design_system/templates/cotton/ds/toggle.html)
+- [X] [Validator](./design_system/templates/cotton/ds/validator.html)
 - [ ] OTP
 
 ### Layout
@@ -88,7 +88,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 
 ### Mockup
 
-- [ ] Browser
-- [ ] Code
-- [ ] Phone
-- [ ] Window
+- [X] [Browser](./design_system/templates/cotton/ds/mockup/browser.html)
+- [X] [Code](./design_system/templates/cotton/ds/mockup/code/index.html)
+- [X] [Phone](./design_system/templates/cotton/ds/mockup/phone/index.html)
+- [X] [Window](./design_system/templates/cotton/ds/mockup/window.html)

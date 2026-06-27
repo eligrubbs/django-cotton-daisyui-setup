@@ -1,0 +1,49 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Mockup Code Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Mockup Code</h2>
+    <p class="text-base-content/70">Mockup Code Showcase.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Regular</h3>
+    <c-ds.mockup.code>
+      <c-ds.mockup.code.line prefix="$">npm install daisyui</c-ds.mockup.code.line>
+    </c-ds.mockup.code>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Line Colors</h3>
+    <c-ds.mockup.code>
+      <c-ds.mockup.code.line prefix="$">npm install daisyui</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="warning">Installing...</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="success">Done!</c-ds.mockup.code.line>      
+    </c-ds.mockup.code>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Line Highlighting</h3>
+    <c-ds.mockup.code>
+      <c-ds.mockup.code.line prefix="$">npm install daisyui</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="warning">Installing...</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="success" highlighted>Done!</c-ds.mockup.code.line>      
+    </c-ds.mockup.code>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Whole Block Highlighted</h3>
+    <c-ds.mockup.code color="primary">
+      <c-ds.mockup.code.line prefix="$">npm install daisyui</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="warning">Installing...</c-ds.mockup.code.line>
+      <c-ds.mockup.code.line prefix=">" color="success" highlighted>Done!</c-ds.mockup.code.line>     
+    </c-ds.mockup.code>
+  </div>
+
+</section>
+{% endblock %}
+
