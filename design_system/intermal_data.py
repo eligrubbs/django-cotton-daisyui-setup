@@ -190,4 +190,11 @@ COMPONENTS_METADATA = {
         url_name="modal",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/modal.html"
     ),
+    "theme_controller": ComponentInfo(
+        name="Theme Controller",
+        category=ComponentCategory.actions,
+        url_path_prefix="theme-controller",
+        url_name="theme_controller",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/theme-controller.html"
+    ),
 }

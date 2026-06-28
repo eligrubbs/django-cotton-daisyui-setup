@@ -11,7 +11,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] FAB / Speed Dial
 - [X] [Modal](./design_system/templates/cotton/ds/modal/index.html)
 - [ ] Swap
-- [ ] Theme Controller
+- [X] [Theme Controller](./design_system/templates/cotton/ds/theme_controller/index.html)
 
 ### Data display
 
