@@ -1,0 +1,54 @@
+{% comment %}
+DaisyUI Modal Component
+
+https://daisyui.com/components/modal/
+
+This requires an `id_` element to be set.
+
+You can control whether clicking outside the backdrop closes the modal with `no_backdrop` attribute.
+
+You can also control the backdrop using the backdrop named slot.
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="dialog"
+  id_
+  no_backdrop
+  placement=""
+  :placementClasses="{
+    '': '',
+    'top': 'modal-top',
+    'middle': 'modal-middle',
+    'bottom': 'modal-bottom',
+    'start': 'modal-start',
+    'end': 'modal-end',
+  }"
+
+/>
+
+
+<{{ as }}
+  id="{{ id_ }}"
+  class="
+    modal
+    {{ class }}
+    {{ placementClasses|get_item:placement }}
+  "
+  {{ attrs }}
+>
+
+  {{ box }}
+
+  {# optional backdrop slot to close dialog when clicking off of it #}
+  {% if not no_backdrop %}
+    {% if backdrop %}
+      {{ backdrop }}
+    {% else %}
+      <c-ds.modal.closer is_background></c-ds.modal.closer>
+    {% endif %}
+  {% endif %}
+
+</{{ as }}>

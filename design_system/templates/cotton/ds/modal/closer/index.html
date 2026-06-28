@@ -1,0 +1,53 @@
+{% comment %}
+
+Simple form with a button inside.
+
+You can make it allow the background to close with `is_background` c-var
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  position=""
+  is_background
+  :positionClasses="{
+    '': '',
+    'top-right': 'right-2 top-2',
+    'top-left': 'left-2 top-2',
+    'bottom-right': 'right-2 bottom-2',
+    'bottom-left': 'left-2 bottom-2'
+  }"
+/>
+
+{% if is_background %}
+
+  {# Not sure if you ever even need to style this, but here just in case #}
+  <form
+    method="dialog"
+    class="modal-backdrop"
+    {{ attrs }}
+  >
+    <button>{{ slot|default:"close" }}</button>
+  </form>
+
+{% else %}
+
+  <form method="dialog" class="">
+    <c-ds.button
+      :attrs="attrs"
+      {# sensible defaults #}
+      size="{{ size|default:"sm" }}"
+      modifier="{{ modifier|default:"circle" }}"
+      style_="{{ style_|default:"ghost" }}"
+      class="{% if position != '' %}absolute{% endif %} {{ positionClasses|get_item:position }} {{ class }}"
+    >
+      {% if slot %}
+          {{ slot }}
+      {% else %}
+          ✕
+      {% endif %}
+    </c-ds.button>
+  </form>
+
+{% endif %}

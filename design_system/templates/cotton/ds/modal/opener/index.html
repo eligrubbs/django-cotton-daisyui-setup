@@ -1,0 +1,12 @@
+{% comment %}
+Wrapper of button component that requires an ID, and has `id.showModal()` baked in.
+
+{% endcomment %}
+
+<c-vars
+  modal_id=""
+/>
+
+<c-ds.button :attrs="attrs" onclick="{{ modal_id }}.showModal()">
+  {{ slot }}
+</c-ds.button>

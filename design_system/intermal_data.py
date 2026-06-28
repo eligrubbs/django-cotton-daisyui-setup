@@ -183,4 +183,11 @@ COMPONENTS_METADATA = {
         url_name="mockup_window",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/mockup-window.html"
     ),
+    "modal": ComponentInfo(
+        name="Modal",
+        category=ComponentCategory.actions,
+        url_path_prefix="modal",
+        url_name="modal",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/modal.html"
+    ),
 }

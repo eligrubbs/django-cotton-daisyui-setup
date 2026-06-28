@@ -9,7 +9,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [X] [Button](./design_system/templates/cotton/ds/button/index.html)
 - [ ] Dropdown
 - [ ] FAB / Speed Dial
-- [ ] Modal
+- [X] [Modal](./design_system/templates/cotton/ds/modal/index.html)
 - [ ] Swap
 - [ ] Theme Controller
 
