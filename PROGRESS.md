@@ -18,7 +18,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Accordion
 - [ ] Avatar
 - [ ] Aura
-- [ ] [Badge](./design_system/templates/cotton/ds/badge/index.html)
+- [X] [Badge](./design_system/templates/cotton/ds/badge/index.html)
 - [ ] Card
 - [ ] Carousel
 - [ ] Chat bubble
