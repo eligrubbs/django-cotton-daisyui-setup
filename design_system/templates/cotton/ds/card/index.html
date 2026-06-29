@@ -1,0 +1,35 @@
+{% comment %}
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="div"
+  size=""
+  style_=""
+  imageFull
+  cardSide
+  :sizeClasses="{
+    '': '',
+    'xs': 'card-xs',
+    'sm': 'card-sm',
+    'md': 'card-md',
+    'lg': 'card-lg',
+    'xl': 'card-xl'
+  }"
+  :styleClasses="{
+    '': '',
+    'dash': 'card-dash',
+  }"
+/>
+
+<{{ as }}
+  class="
+  card
+  {{ sizeClasses|get_item:size }}
+  {{ styleClasses|get_item:style_ }}
+  {{ class }}
+  "
+>
+  {{ slot }}
+</{{ as }}>

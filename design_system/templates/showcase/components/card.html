@@ -1,0 +1,36 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Card Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Card</h2>
+    <p class="text-base-content/70">Sample DaisyUI Cards.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Card</h3>
+      <c-ds.card class="w-96 shadow-sm bg-base-100">
+        <c-ds.card.figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes" />
+        </c-ds.card.figure>
+
+        <c-ds.card.body>
+          <c-ds.card.title>Card Title</c-ds.card.title>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <c-ds.card.actions class="justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </c-ds.card.actions>
+        </c-ds.card.body>
+
+      </c-ds.card>
+
+    </div>
+
+
+</section>
+{% endblock %}

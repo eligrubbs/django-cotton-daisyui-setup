@@ -197,4 +197,11 @@ COMPONENTS_METADATA = {
         url_name="theme_controller",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/theme-controller.html"
     ),
+    "card": ComponentInfo(
+        name="Card",
+        category=ComponentCategory.data_display,
+        url_path_prefix="card",
+        url_name="card",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/card.html"
+    ),
 }
