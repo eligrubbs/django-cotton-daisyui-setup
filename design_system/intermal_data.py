@@ -218,4 +218,11 @@ COMPONENTS_METADATA = {
         url_name="list",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/list.html"
     ),
+    "text_rotate": ComponentInfo(
+        name="Text Rotate",
+        category=ComponentCategory.data_display,
+        url_path_prefix="text-rotate",
+        url_name="text_rotate",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/text-rotate.html"
+    ),
 }

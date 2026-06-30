@@ -1,0 +1,20 @@
+{% comment %}
+DiasyUI Text Rotate Component
+
+https://daisyui.com/components/text-rotate/
+
+When providing a duration, provide it in milliseconds (duration-6000 for 6 seconds)
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  duration=""
+/>
+
+<span class="text-rotate {% if duration %}{{ duration }}{% endif %} {{ class }}" {{ attrs }}>
+  <span>
+    {{ slot }}
+  </span>
+</span>

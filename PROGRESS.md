@@ -28,11 +28,11 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Hover 3D card
 - [ ] Hover Gallery
 - [X] [Kbd](./design_system/templates/cotton/ds/kbd/index.html)
-- [ ] List
+- [X] [List](./design_system/templates/cotton/ds/list/index.html)
 - [ ] Stat
 - [X] [Status](./design_system/templates/cotton/ds/status/index.html)
 - [X] [Table](./design_system/templates/cotton/ds/table/index.html)
-- [ ] Text Rotate
+- [X] [Text Rotate](./design_system/templates/cotton/ds/text_rotate/index.html)
 - [ ] Timeline
 
 ### Navigation
