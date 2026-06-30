@@ -1,0 +1,24 @@
+{% comment %}
+
+Group part of icons that surrounds a group of icons, stacking them on top of each other.
+
+{% endcomment %}
+
+
+<c-vars
+    class=""
+    as="div"
+    spacing="tight"
+    :spacingClasses="{
+      '': '',
+      'wide': '',
+      'normal': '-space-x-2',
+      'tight': '-space-x-6',
+      'tighter': '-space-x-8',
+      'tightest': '-space-x-12'
+    }"
+/>
+
+<{{ as }} class="avatar-group {{ spacingClasses|get_item:spacing }} {{ class }}" {{ attrs }}>
+    {{ slot }}
+</{{ as }}>

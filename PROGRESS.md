@@ -16,10 +16,10 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 ### Data display
 
 - [ ] Accordion
-- [ ] Avatar
+- [X] [Avatar](./design_system/templates/cotton/ds/avatar/index.html)
 - [ ] Aura
 - [X] [Badge](./design_system/templates/cotton/ds/badge/index.html)
-- [ ] Card
+- [X] [Card](./design_system/templates/cotton/ds/card/index.html)
 - [ ] Carousel
 - [ ] Chat bubble
 - [ ] Collapse

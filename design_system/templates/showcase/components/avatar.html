@@ -1,0 +1,98 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Avatar Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Avatar</h2>
+    <p class="text-base-content/70">All available DaisyUI avatar shapes and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  {% with "https://img.daisyui.com/images/profile/demo/batperson@192.webp" as bat_img %}
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Avatar</h3>
+
+      <c-ds.avatar size="lg" rounded="full" src="{{ bat_img }}" />
+
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Masks</h3>
+      
+      <div class="flex flex-row gap-2">
+        <c-ds.avatar size="lg" mask="heart" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="squircle" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="hexagon-2" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="triangle" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="pentagon" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="diamond" src="{{ bat_img }}" />
+        <c-ds.avatar size="lg" mask="star" src="{{ bat_img }}" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Custom Sizes</h3>
+      
+      <div class="flex flex-row gap-2 items-start">
+        {% for sz in design_system.sizes %}
+          <c-ds.avatar size="{{ sz }}" src="{{ bat_img }}" />
+        {% endfor %}
+      </div>
+
+      <div class="mt-2">
+        {% for sz in design_system.sizes %}
+          <c-ds.avatar size="{{ sz }}" placeholder placeholderText="Hello" bgColor="neutral" />
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Rings</h3>
+      <div>
+        <ul class="flex items-start gap-4">
+          {% for col in design_system.colors %}
+            <c-ds.avatar as="li" rounded="full" size="md" src="{{ bat_img }}" ring ringColor="{{ col }}"/>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Avatar group with counter</h3>
+      <div>
+        <c-ds.avatar.group as="ul">
+          <c-ds.avatar as="li" size="sm" src="{{ bat_img }}" />
+          <c-ds.avatar as="li" size="sm" src="{{ bat_img }}" />
+          <c-ds.avatar as="li" size="sm" src="{{ bat_img }}" />
+          <c-ds.avatar as="li" size="sm" placeholder placeholderText="+99" bgColor="neutral"/>
+        </c-ds.avatar.group>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Placeholder</h3>
+
+      <ul class="flex items-start gap-4">
+        {% for col in design_system.colors %}
+          <c-ds.avatar as="li" rounded="full" size="sm" bgColor="{{ col }}" placeholder placeholderText="FO"/>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Online / Offline</h3>
+
+      <div>
+          <c-ds.avatar as="li" size="md" src="{{ bat_img }}" rounded="full" status="online" />
+          <c-ds.avatar as="li" size="md" src="{{ bat_img }}" rounded="full" status="offline" />
+      </div>
+
+    </div>
+
+  {% endwith %}
+
+</section>
+{% endblock %}

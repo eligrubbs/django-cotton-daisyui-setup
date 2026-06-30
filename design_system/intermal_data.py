@@ -204,4 +204,11 @@ COMPONENTS_METADATA = {
         url_name="card",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/card.html"
     ),
+    "avatar": ComponentInfo(
+        name="Avatar",
+        category=ComponentCategory.data_display,
+        url_path_prefix="avatar",
+        url_name="avatar",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/avatar.html"
+    ),
 }
