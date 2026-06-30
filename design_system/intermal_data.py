@@ -225,4 +225,11 @@ COMPONENTS_METADATA = {
         url_name="text_rotate",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/text-rotate.html"
     ),
+    "link": ComponentInfo(
+        name="Link",
+        category=ComponentCategory.navigation,
+        url_path_prefix="link",
+        url_name="link",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/link.html"
+    ),
 }

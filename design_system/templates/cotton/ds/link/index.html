@@ -1,0 +1,40 @@
+{% comment %}
+DaisyUI Link Component
+
+https://daisyui.com/components/link/
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  as="a"
+  href=""
+  color=""
+  hover
+  :colorClasses="{
+    '': '',
+    'neutral': 'link-neutral',
+    'primary': 'link-primary',
+    'secondary': 'link-secondary',
+    'accent': 'link-accent',
+    'info': 'link-info',
+    'success': 'link-success',
+    'warning': 'link-warning',
+    'error': 'link-error'
+  }"
+/>
+
+
+<{{ as }}
+  class="
+      link
+      {{ colorClasses|get_item:color }}
+      {% if hover %}link-hover{% endif %}
+      {{ class }}
+  "
+  {% if href %}href="{{ href }}"{% endif %}
+  {{ attrs }}
+>
+    {{ slot }}
+</{{ as }}>

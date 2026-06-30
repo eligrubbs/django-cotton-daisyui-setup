@@ -39,7 +39,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 
 - [ ] Breadcrumbs
 - [ ] Dock
-- [ ] Link
+- [X] [Link](./design_system/templates/cotton/ds/link/index.html)
 - [ ] Megamenu
 - [ ] Menu
 - [ ] Navbar
