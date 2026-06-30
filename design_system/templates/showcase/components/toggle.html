@@ -13,25 +13,18 @@
     <div>
       <h3 class="text-lg font-semibold mb-4">Sizes</h3>
       <div class="flex flex-wrap gap-4">
-        <c-ds.toggle size="xs" checked/>
-        <c-ds.toggle size="sm" checked />
-        <c-ds.toggle size="md" checked />
-        <c-ds.toggle size="lg" checked />
-        <c-ds.toggle size="xl" checked />
+        {% for sz in design_system.sizes %}
+          <c-ds.toggle size="{{ sz }}" checked/>
+        {% endfor %}
       </div>
     </div>
 
     <div>
       <h3 class="text-lg font-semibold mb-4">Colors</h3>
       <div class="flex flex-wrap gap-4">
-        <c-ds.toggle color="primary" checked />
-        <c-ds.toggle color="secondary" checked />
-        <c-ds.toggle color="accent" checked />
-        <c-ds.toggle color="neutral" checked />
-        <c-ds.toggle color="info" checked />
-        <c-ds.toggle color="success" checked />
-        <c-ds.toggle color="warning" checked />
-        <c-ds.toggle color="error" checked />
+        {% for col in design_system.colors %}
+          <c-ds.toggle color="{{ col }}" checked />
+        {% endfor %}
       </div>
     </div>
 

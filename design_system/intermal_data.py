@@ -232,4 +232,11 @@ COMPONENTS_METADATA = {
         url_name="link",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/link.html"
     ),
+    "toast": ComponentInfo(
+        name="Toast",
+        category=ComponentCategory.feedback,
+        url_path_prefix="toast",
+        url_name="toast",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/toast.html"
+    ),
 }

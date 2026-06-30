@@ -54,7 +54,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [X] [Progress](./design_system/templates/cotton/ds/progress/index.html)
 - [ ] Radial Progress
 - [X] [Skeleton](./design_system/templates/cotton/ds/skeleton/index.html)
-- [ ] Toast
+- [X] [Toast](./design_system/templates/cotton/ds/toast/index.html)
 - [X] [Tooltip](./design_system/templates/cotton/ds/tooltip/index.html)
 
 ### Data input
