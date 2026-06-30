@@ -1,0 +1,22 @@
+{% comment %}
+
+List row component.
+
+For one of the direct children of this component, you can use:
+  - `list-col-wrap` to push it to the next line
+  - `list-col-grow` to make it fill the remaining space
+
+{% endcomment %}
+
+
+<c-vars
+    class=""
+    as="li"
+/>
+
+<{{ as }}
+    class="list-row {{ class }}"
+    {{ attrs }}
+>
+    {{ slot }}
+</{{ as }}>

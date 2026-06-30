@@ -1,0 +1,19 @@
+{% comment %}
+DaisyUI List Component
+
+https://daisyui.com/components/list/
+
+{% endcomment %}
+
+<c-vars
+    class=""
+    as="ul"
+/>
+
+<{{ as }}
+    class="list {{ class }}"
+    {{ attrs }}
+>
+    {{ slot }}
+</{{ as }}>
+
