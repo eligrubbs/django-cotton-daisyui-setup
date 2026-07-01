@@ -44,7 +44,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Menu
 - [ ] Navbar
 - [ ] Pagination
-- [ ] Steps
+- [X] [Steps](./design_system/templates/cotton/ds/steps/index.html)
 - [ ] Tab
 
 ### Feedback

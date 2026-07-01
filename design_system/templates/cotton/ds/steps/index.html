@@ -1,0 +1,22 @@
+{% comment %}
+
+DaisyUI Steps Component
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="ul"
+  direction="horizontal"
+  :directionClasses="{
+    '': '',
+    'horizontal': 'steps-horizontal',
+    'vertical': 'steps-vertical',
+  }"
+/>
+
+<{{ as }}
+  class="steps {{ directionClasses|get_item:direction }} {{ class }}"
+>
+  {{ slot }}
+</{{ as }}>

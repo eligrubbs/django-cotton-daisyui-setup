@@ -1,0 +1,53 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Steps Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Steps</h2>
+    <p class="text-base-content/70">All available DaisyUI steps colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Horizontal</h3>
+      <div class="flex flex-row gap-2">
+        <c-ds.steps>
+          <c-ds.steps.item color="primary">Register</c-ds.steps.item>
+          <c-ds.steps.item color="primary">Choose plan</c-ds.steps.item>
+          <c-ds.steps.item>Purchase</c-ds.steps.item>
+          <c-ds.steps.item>Receive Product</c-ds.steps.item>
+        </c-ds.steps>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Vertical</h3>
+      <div class="flex flex-row gap-2">
+        <c-ds.steps direction="vertical">
+          <c-ds.steps.item color="primary">Register</c-ds.steps.item>
+          <c-ds.steps.item color="primary">Choose plan</c-ds.steps.item>
+          <c-ds.steps.item>Purchase</c-ds.steps.item>
+          <c-ds.steps.item>Receive Product</c-ds.steps.item>
+        </c-ds.steps>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">With Data Content</h3>
+      <div class="flex flex-row gap-2">
+        <c-ds.steps>
+          <c-ds.steps.item content="?" color="neutral">Step 1</c-ds.steps.item>
+          <c-ds.steps.item content="!" color="neutral">Step 2</c-ds.steps.item>
+          <c-ds.steps.item content="✓" color="neutral">Step 3</c-ds.steps.item>
+          <c-ds.steps.item content="✕" color="neutral">Step 4</c-ds.steps.item>
+          <c-ds.steps.item content="★" color="neutral">Step 5</c-ds.steps.item>
+          <c-ds.steps.item content="" color="neutral">Step 6</c-ds.steps.item>
+          <c-ds.steps.item content="●" color="neutral">Step 7</c-ds.steps.item>
+        </c-ds.steps>
+      </div>
+    </div>
+
+</section>
+{% endblock %}

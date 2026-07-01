@@ -239,4 +239,11 @@ COMPONENTS_METADATA = {
         url_name="toast",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/toast.html"
     ),
+    "steps": ComponentInfo(
+        name="Steps",
+        category=ComponentCategory.navigation,
+        url_path_prefix="steps",
+        url_name="steps",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/steps.html"
+    ),
 }

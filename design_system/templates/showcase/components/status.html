@@ -13,11 +13,9 @@
     <div>
       <h3 class="text-lg font-semibold mb-4">Size</h3>
       <div class="flex flex-row gap-2">
-        <c-ds.status size="xs"></c-ds.status>
-        <c-ds.status size="sm"></c-ds.status>
-        <c-ds.status size="md"></c-ds.status>
-        <c-ds.status size="lg"></c-ds.status>
-        <c-ds.status size="xl"></c-ds.status>
+        {% for sz in design_system.sizes %}
+          <c-ds.status size="{{ sz }}"></c-ds.status>
+        {% endfor %}
       </div>
     </div>
 

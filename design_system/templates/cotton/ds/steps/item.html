@@ -1,0 +1,30 @@
+{% comment %}
+DaisyUI 
+
+{% endcomment %}
+
+<c-vars
+    class=""
+    as="li"
+    color=""
+    :colorClasses="{
+      '': '',
+      'neutral': 'step-neutral',
+      'primary': 'step-primary',
+      'secondary': 'step-secondary',
+      'accent': 'step-accent',
+      'info': 'step-info',
+      'success': 'step-success',
+      'warning': 'step-warning',
+      'error': 'step-error'
+    }"
+    content=""
+/>
+
+<{{ as }}
+  class="step {{ colorClasses|get_item:color }} {{ class }}"
+  {% if content %}data-content="{{ content }}"{% endif %}
+  {{ attrs }}
+>
+  {{ slot }}
+</{{ as }}>
