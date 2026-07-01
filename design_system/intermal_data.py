@@ -246,4 +246,11 @@ COMPONENTS_METADATA = {
         url_name="steps",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/steps.html"
     ),
+    "stat": ComponentInfo(
+        name="Stat",
+        category=ComponentCategory.data_display,
+        url_path_prefix="stat",
+        url_name="stat",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/stat.html"
+    ),
 }

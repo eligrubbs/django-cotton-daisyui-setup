@@ -1,0 +1,15 @@
+
+<c-vars
+    class=""
+    as="div"
+    direction="horizontal"
+    :directionClasses="{
+      '': '',
+      'horizontal': 'stats-horizontal',
+      'vertical': 'stats-vertical'
+    }"
+/>
+
+<{{ as }} class="stats {{ directionClasses|get_item:direction }} {{ class }}" {{ attrs }}>
+    {{ slot }}
+</{{ as }}>

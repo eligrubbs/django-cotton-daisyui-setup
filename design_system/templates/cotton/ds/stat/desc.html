@@ -1,0 +1,19 @@
+
+<c-vars
+    class=""
+    as="div"
+    color=""
+    :colorClasses="{
+      '': '',
+      'primary': 'text-primary',
+      'secondary': 'text-secondary',
+      'accent': 'text-accent',
+      'neutral': 'text-neutral',
+      'info': 'text-info',
+      'success': 'text-success',
+      'warning': 'text-warning',
+      'error': 'text-error'
+    }"
+/>
+
+<{{ as }} class="stat-desc {{ colorClasses|get_item:color }} {{ class }}" {{ attrs }}>{{ slot }}</{{ as }}>

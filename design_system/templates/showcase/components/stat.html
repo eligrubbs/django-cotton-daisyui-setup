@@ -1,0 +1,136 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Stat Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Stat</h2>
+    <p class="text-base-content/70">All available DaisyUI stat colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Demo</h3>
+      <div>
+        <c-ds.stat.group class="shadow">
+          <c-ds.stat>
+            <c-ds.stat.title>Total Page Views</c-ds.stat.title>
+            <c-ds.stat.value>89,400</c-ds.stat.value>
+            <c-ds.stat.desc>21% more than last month</c-ds.stat.desc>
+          </c-ds.stat>
+        </c-ds.stat.group>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Group</h3>
+      <div>
+        <c-ds.stat.group class="shadow">
+          <c-ds.stat>
+            <c-ds.stat.figure color="primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </c-ds.stat.figure>
+            <c-ds.stat.title>Total Likes</c-ds.stat.title>
+            <c-ds.stat.value color="primary">25.6K</c-ds.stat.value>
+            <c-ds.stat.desc>21% more than last month</c-ds.stat.desc>
+
+          </c-ds.stat>
+
+          <c-ds.stat>
+            <c-ds.stat.figure color="secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </c-ds.stat.figure>
+            <c-ds.stat.title>Page Views</c-ds.stat.title>
+            <c-ds.stat.value color="secondary">2.6M</c-ds.stat.value>
+            <c-ds.stat.desc>21% more than last month</c-ds.stat.desc>
+          </c-ds.stat>
+
+          <c-ds.stat>
+            <c-ds.stat.figure>
+              <c-ds.avatar status="online" rounded="full" size="md" src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp" />
+            </c-ds.stat.figure>
+            <c-ds.stat.value>86%</c-ds.stat.value>
+            <c-ds.stat.title>Tasks done</c-ds.stat.title>
+            <c-ds.stat.desc color="secondary">31 tasks remaining</c-ds.stat.desc>
+          </c-ds.stat>
+
+        </c-ds.stat.group>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Group Vertical</h3>
+      <div>
+        <c-ds.stat.group class="shadow" direction="vertical">
+          <c-ds.stat>
+            <c-ds.stat.figure color="primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </c-ds.stat.figure>
+            <c-ds.stat.title>Total Likes</c-ds.stat.title>
+            <c-ds.stat.value color="primary">25.6K</c-ds.stat.value>
+            <c-ds.stat.desc>21% more than last month</c-ds.stat.desc>
+
+          </c-ds.stat>
+
+          <c-ds.stat>
+            <c-ds.stat.figure color="secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </c-ds.stat.figure>
+            <c-ds.stat.title>Page Views</c-ds.stat.title>
+            <c-ds.stat.value color="secondary">2.6M</c-ds.stat.value>
+            <c-ds.stat.desc>21% more than last month</c-ds.stat.desc>
+          </c-ds.stat>
+
+          <c-ds.stat>
+            <c-ds.stat.figure>
+              <c-ds.avatar status="online" rounded="full" size="md" src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp" />
+            </c-ds.stat.figure>
+            <c-ds.stat.value>86%</c-ds.stat.value>
+            <c-ds.stat.title>Tasks done</c-ds.stat.title>
+            <c-ds.stat.desc color="secondary">31 tasks remaining</c-ds.stat.desc>
+          </c-ds.stat>
+
+        </c-ds.stat.group>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Custom Actions</h3>
+      <div>
+        <c-ds.stat.group class="bg-base-100 border-base-300 border">
+          <c-ds.stat>
+            <c-ds.stat.title>Account balance</c-ds.stat.title>
+            <c-ds.stat.value>$89,400</c-ds.stat.value>
+            <c-ds.stat.actions>
+              <c-ds.button size="xs" color="success">Add funds</c-ds.button>
+            </c-ds.stat.actions>
+          </c-ds.stat>
+
+          <c-ds.stat>
+            <c-ds.stat.title>Current balance</c-ds.stat.title>
+            <c-ds.stat.value>$89,400</c-ds.stat.value>
+            <c-ds.stat.actions>
+              <c-ds.button size="xs">Withdrawl</c-ds.button>
+              <c-ds.button size="xs">Deposit</c-ds.button>
+            </c-ds.stat.actions>
+          </c-ds.stat>
+        </c-ds.stat.group>
+
+      </div>
+    </div>
+
+</section>
+{% endblock %}
