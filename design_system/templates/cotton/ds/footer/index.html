@@ -1,0 +1,25 @@
+{% comment %}
+DaisyUI Footer Component
+
+https://daisyui.com/components/footer/
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="footer"
+  center
+  direction="horizontal"
+  :directionClasses="{
+    '': '',
+    'vertical': 'footer-vertical',
+    'horizontal': 'footer-horizontal'
+  }"
+/>
+
+<{{ as }}
+  class="footer {% if center %}footer-center{% endif %} {{ directionClasses|get_item:direction }} {{ class }}"
+  {{ attrs }}
+>
+  {{ slot }}
+</{{ as }}>

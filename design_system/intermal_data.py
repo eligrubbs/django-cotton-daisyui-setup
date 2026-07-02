@@ -274,4 +274,11 @@ COMPONENTS_METADATA = {
         url_name="indicator",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/indicator.html"
     ),
+    "footer": ComponentInfo(
+        name="Footer",
+        category=ComponentCategory.layout,
+        url_path_prefix="footer",
+        url_name="footer",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/footer.html"
+    ),
 }
