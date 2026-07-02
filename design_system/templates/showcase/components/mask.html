@@ -1,0 +1,83 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Mask Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Mask</h2>
+    <p class="text-base-content/70">All available DaisyUI mask colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">All</h3>
+      <div class="flex flex-wrap gap-4">
+      {% with "https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" as img_url %}
+        <c-ds.mask shape="squircle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="heart" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="hexagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="hexagon-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="decagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="pentagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="diamond" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="sqaure" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="circle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="star" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="star-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="triangle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="triangle-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="triangle-3" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask shape="triangle-4" class="w-16 h-16" src="{{ img_url }}" />
+      {% endwith %}
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Mask first half</h3>
+      <div class="flex flex-wrap gap-4">
+      {% with "https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" as img_url %}
+        <c-ds.mask half="1" shape="squircle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="heart" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="hexagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="hexagon-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="decagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="pentagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="diamond" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="sqaure" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="circle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="star" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="star-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="triangle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="triangle-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="triangle-3" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="1" shape="triangle-4" class="w-16 h-16" src="{{ img_url }}" />
+      {% endwith %}
+      </div>
+    </div>
+
+        <div>
+      <h3 class="text-lg font-semibold mb-4">Mask second half</h3>
+      <div class="flex flex-wrap gap-4">
+      {% with "https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" as img_url %}
+        <c-ds.mask half="2" shape="squircle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="heart" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="hexagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="hexagon-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="decagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="pentagon" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="diamond" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="sqaure" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="circle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="star" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="star-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="triangle" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="triangle-2" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="triangle-3" class="w-16 h-16" src="{{ img_url }}" />
+        <c-ds.mask half="2" shape="triangle-4" class="w-16 h-16" src="{{ img_url }}" />
+      {% endwith %}
+      </div>
+    </div>
+
+</section>
+{% endblock %}

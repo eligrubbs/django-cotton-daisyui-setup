@@ -24,42 +24,27 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Spinner</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading color="primary">Primary</c-ds.loading>
-            <c-ds.loading color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading color="accent">Accent</c-ds.loading>
-            <c-ds.loading color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading color="info">Info</c-ds.loading>
-            <c-ds.loading color="success">Success</c-ds.loading>
-            <c-ds.loading color="warning">Warning</c-ds.loading>
-            <c-ds.loading color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
 
     <div>
         <h3 class="text-lg font-semibold mb-4">Dots</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading style_="dots" color="primary">Primary</c-ds.loading>
-            <c-ds.loading style_="dots" color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading style_="dots" color="accent">Accent</c-ds.loading>
-            <c-ds.loading style_="dots" color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading style_="dots" color="info">Info</c-ds.loading>
-            <c-ds.loading style_="dots" color="success">Success</c-ds.loading>
-            <c-ds.loading style_="dots" color="warning">Warning</c-ds.loading>
-            <c-ds.loading style_="dots" color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading style_="dots" color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
 
     <div>
         <h3 class="text-lg font-semibold mb-4">Ring</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading style_="ring" color="primary">Primary</c-ds.loading>
-            <c-ds.loading style_="ring" color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading style_="ring" color="accent">Accent</c-ds.loading>
-            <c-ds.loading style_="ring" color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading style_="ring" color="info">Info</c-ds.loading>
-            <c-ds.loading style_="ring" color="success">Success</c-ds.loading>
-            <c-ds.loading style_="ring" color="warning">Warning</c-ds.loading>
-            <c-ds.loading style_="ring" color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading style_="ring" color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
 
@@ -67,14 +52,9 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Ball</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading style_="ball" color="primary">Primary</c-ds.loading>
-            <c-ds.loading style_="ball" color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading style_="ball" color="accent">Accent</c-ds.loading>
-            <c-ds.loading style_="ball" color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading style_="ball" color="info">Info</c-ds.loading>
-            <c-ds.loading style_="ball" color="success">Success</c-ds.loading>
-            <c-ds.loading style_="ball" color="warning">Warning</c-ds.loading>
-            <c-ds.loading style_="ball" color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading style_="ball" color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
     
@@ -82,14 +62,9 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Bars</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading style_="bars" color="primary">Primary</c-ds.loading>
-            <c-ds.loading style_="bars" color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading style_="bars" color="accent">Accent</c-ds.loading>
-            <c-ds.loading style_="bars" color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading style_="bars" color="info">Info</c-ds.loading>
-            <c-ds.loading style_="bars" color="success">Success</c-ds.loading>
-            <c-ds.loading style_="bars" color="warning">Warning</c-ds.loading>
-            <c-ds.loading style_="bars" color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading style_="bars" color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
 
@@ -97,14 +72,9 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Infinity</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.loading style_="infinity" color="primary">Primary</c-ds.loading>
-            <c-ds.loading style_="infinity" color="secondary">Secondary</c-ds.loading>
-            <c-ds.loading style_="infinity" color="accent">Accent</c-ds.loading>
-            <c-ds.loading style_="infinity" color="neutral">Neutral</c-ds.loading>
-            <c-ds.loading style_="infinity" color="info">Info</c-ds.loading>
-            <c-ds.loading style_="infinity" color="success">Success</c-ds.loading>
-            <c-ds.loading style_="infinity" color="warning">Warning</c-ds.loading>
-            <c-ds.loading style_="infinity" color="error">Error</c-ds.loading>
+          {% for col in design_system.colors %}
+            <c-ds.loading style_="infinity" color="{{ col }}">{{ col }}</c-ds.loading>
+          {% endfor %}
         </div>
     </div>
 

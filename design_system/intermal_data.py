@@ -253,4 +253,18 @@ COMPONENTS_METADATA = {
         url_name="stat",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/stat.html"
     ),
+    "mask": ComponentInfo(
+        name="Mask",
+        category=ComponentCategory.layout,
+        url_path_prefix="mask",
+        url_name="mask",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/mask.html"
+    ),
+    "stack": ComponentInfo(
+        name="Stack",
+        category=ComponentCategory.layout,
+        url_path_prefix="stack",
+        url_name="stack",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/stack.html"
+    ),
 }

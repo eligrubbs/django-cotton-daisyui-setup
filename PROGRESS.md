@@ -83,8 +83,8 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Hero
 - [ ] Indicator
 - [ ] Join (group items)
-- [ ] Mask
-- [ ] Stack
+- [X] [Mask](./design_system/templates/cotton/ds/mask/index.html)
+- [X] [Stack](./design_system/templates/cotton/ds/stack/index.html)
 
 ### Mockup
 

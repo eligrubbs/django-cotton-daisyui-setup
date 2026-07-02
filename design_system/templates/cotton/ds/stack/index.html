@@ -1,0 +1,25 @@
+{% comment %}
+DaisyUI Stack Component
+
+https://daisyui.com/components/stack/
+
+You can use w-* and h-* classes to set the width and height of the stack, making all items the same size.
+
+{% endcomment %}
+
+<c-vars
+  as="div"
+  class=""
+  direction=""
+  :directionClasses="{
+    '': '',
+    'top': 'stack-top',
+    'bottom': 'stack-bottom',
+    'start': 'stack-start',
+    'end': 'stack-end'
+  }"
+/>
+
+<{{ as }} class="stack {{ directionClasses|get_item:direction }} {{ class }}" {{ attrs }}>
+  {{ slot }}
+</{{ as }}>

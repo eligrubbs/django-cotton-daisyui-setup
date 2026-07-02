@@ -1,0 +1,67 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Stack Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Stack</h2>
+    <p class="text-base-content/70">All available DaisyUI stack modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Stacks in 4 directions</h3>
+      <c-ds.stack class="size-28">
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>Top</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>B</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>C</c-ds.card.body>
+        </c-ds.card>
+      </c-ds.stack>
+
+      <c-ds.stack class="size-28" direction="end">
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>End</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>B</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>C</c-ds.card.body>
+        </c-ds.card>
+      </c-ds.stack>
+
+
+      <c-ds.stack class="size-28" direction="bottom">
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>Bottom</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>B</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>C</c-ds.card.body>
+        </c-ds.card>
+      </c-ds.stack>
+
+
+      <c-ds.stack class="size-28" direction="start">
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>Start</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>B</c-ds.card.body>
+        </c-ds.card>
+        <c-ds.card class="text-center bg-base-100 border border-base-content">
+          <c-ds.card.body>C</c-ds.card.body>
+        </c-ds.card>
+      </c-ds.stack>
+    </div>
+
+</section>
+{% endblock %}
