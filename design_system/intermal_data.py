@@ -267,4 +267,11 @@ COMPONENTS_METADATA = {
         url_name="stack",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/stack.html"
     ),
+    "indicator": ComponentInfo(
+        name="Indicator",
+        category=ComponentCategory.layout,
+        url_path_prefix="indicator",
+        url_name="indicator",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/indicator.html"
+    ),
 }

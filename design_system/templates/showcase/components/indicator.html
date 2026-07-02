@@ -1,0 +1,63 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Indicator Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Indicator</h2>
+    <p class="text-base-content/70">All available DaisyUI indicator colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Status Indicator</h3>
+      
+      <c-ds.indicator>
+        {# Top #}
+        <c-ds.indicator.item horizontal="start" vertical="top">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+        
+        <c-ds.indicator.item horizontal="center" vertical="top">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        <c-ds.indicator.item horizontal="end" vertical="top">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        {# Middle #}
+        <c-ds.indicator.item horizontal="start" vertical="middle">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+        
+        <c-ds.indicator.item horizontal="center" vertical="middle">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        <c-ds.indicator.item horizontal="end" vertical="middle">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        {# Bottom #}
+        <c-ds.indicator.item horizontal="start" vertical="bottom">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+        
+        <c-ds.indicator.item horizontal="center" vertical="bottom">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        <c-ds.indicator.item horizontal="end" vertical="bottom">
+          <c-ds.status color="success"/>
+        </c-ds.indicator.item>
+
+        {# Content #}
+        <div class="bg-base-300 grid h-32 w-32 place-items-center">content</div>
+      </c-ds.indicator>
+    </div>
+
+
+</section>
+{% endblock %}

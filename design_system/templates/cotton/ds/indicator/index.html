@@ -1,0 +1,15 @@
+{% comment %}
+DaisyUI Indicator Component
+
+https://daisyui.com/components/indicator/
+
+Wrap an element in this, and add as a child an indicator item component to put that indicator on the subsequent child in this element.
+
+{% endcomment %}
+
+
+<c-vars as="div" class="" />
+
+<{{ as }} class="indicator {{ class }}" {{ attrs }}>
+  {{ slot }}
+</{{ as }}>

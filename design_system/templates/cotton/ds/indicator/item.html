@@ -1,0 +1,30 @@
+{% comment %}
+
+The only real tweak made is to ensure that the indicator-item is just a wrapper.
+
+That means adding extra css so this wrapper has no height, allowing it's child to appear in the right spot.
+
+{% endcomment %}
+
+<c-vars
+  as="div"
+  class=""
+  horizontal=""
+  vertical=""
+  :horizontalClasses="{
+    '': '',
+    'start': 'indicator-start',
+    'center': 'indicator-center',
+    'end': 'indicator-end'
+  }"
+  :verticalClasses="{
+    '': '',
+    'top': 'indicator-top',
+    'middle': 'indicator-middle',
+    'bottom': 'indicator-bottom'
+  }"
+/>
+
+<{{ as }} class="indicator-item leading-[0] {{ horizontalClasses|get_item:horizontal }} {{ verticalClasses|get_item:vertical }} {{ class }}" {{ attrs }}>
+  {{ slot }}
+</{{ as }}>
