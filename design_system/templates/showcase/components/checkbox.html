@@ -13,25 +13,18 @@
     <div>
       <h3 class="text-lg font-semibold mb-4">Sizes</h3>
       <div class="flex flex-wrap gap-4">
-          <c-ds.checkbox size="xs" checked></c-ds.checkbox>
-          <c-ds.checkbox size="sm" checked ></c-ds.checkbox>
-          <c-ds.checkbox size="md" checked ></c-ds.checkbox>
-          <c-ds.checkbox size="lg" checked ></c-ds.checkbox>
-          <c-ds.checkbox size="xl" checked ></c-ds.checkbox>
+        {% for sz in design_system.sizes %}
+          <c-ds.checkbox size="{{ sz }}" checked />
+        {% endfor %}
       </div>
     </div>
 
     <div>
         <h3 class="text-lg font-semibold mb-4">Colors</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.checkbox color="primary" checked >Primary</c-ds.checkbox>
-            <c-ds.checkbox color="secondary" checked >Secondary</c-ds.checkbox>
-            <c-ds.checkbox color="accent" checked >Accent</c-ds.checkbox>
-            <c-ds.checkbox color="neutral" checked >Neutral</c-ds.checkbox>
-            <c-ds.checkbox color="info" checked >Info</c-ds.checkbox>
-            <c-ds.checkbox color="success" checked >Success</c-ds.checkbox>
-            <c-ds.checkbox color="warning" checked >Warning</c-ds.checkbox>
-            <c-ds.checkbox color="error" checked >Error</c-ds.checkbox>
+          {% for col in design_system.colors %}
+            <c-ds.checkbox color="{{ col }}" checked >{{ col }}</c-ds.checkbox>
+          {% endfor %}
         </div>
     </div>
 

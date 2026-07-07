@@ -295,4 +295,11 @@ COMPONENTS_METADATA = {
         url_name="hero",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/hero.html"
     ),
+    "divider": ComponentInfo(
+        name="Divider",
+        category=ComponentCategory.layout,
+        url_path_prefix="divider",
+        url_name="divider",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/divider.html"
+    ),
 }

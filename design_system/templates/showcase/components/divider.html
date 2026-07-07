@@ -1,0 +1,41 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Divider Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Divider</h2>
+    <p class="text-base-content/70">All available DaisyUI divider colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Colors</h3>
+      <div class="flex flex-col w-56">
+        {% for col in design_system.colors %}
+          <c-ds.divider color="{{ col }}">{{ col }}</c-ds.divider>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Divier in different positions</h3>
+      <div class="flex flex-col w-56">
+        <c-ds.divider placement="start">Start</c-ds.divider>
+        <c-ds.divider placement="">Default</c-ds.divider>
+        <c-ds.divider placement="end">End</c-ds.divider>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Divier in different positions (horizontal)</h3>
+      <div class="flex w-56 h-56">
+        <c-ds.divider direction="horizontal" placement="start">Start</c-ds.divider>
+        <c-ds.divider direction="horizontal" placement="">Default</c-ds.divider>
+        <c-ds.divider direction="horizontal" placement="end">End</c-ds.divider>
+      </div>
+    </div>
+
+</section>
+{% endblock %}
