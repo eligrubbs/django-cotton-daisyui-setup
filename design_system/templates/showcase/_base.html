@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale">
     <title>{% block title %}Design System Showcase{% endblock %}</title>
     {# Tailwind #}
-    <link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
-    {% block extra_head %}{% endblock %}
+    <c-ds.css-asset />
 
+    {% block extra_head %}{% endblock %}
 
     <c-ds.theme-controller.head-js />
 
