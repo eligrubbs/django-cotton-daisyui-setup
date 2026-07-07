@@ -1,0 +1,70 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Hero Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Hero</h2>
+    <p class="text-base-content/70">Demo of DaisyUI Hero.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3>Hero</h3>
+    <c-ds.hero class="bg-base-200">
+      <c-ds.hero.content class="text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Hello there</h1>
+          <p class="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <c-ds.button color="primary">Get Started</c-ds.button>
+        </div>
+      </c-ds.hero.content>
+    </c-ds.hero>
+  </div>
+
+  <div>
+    <h3>Hero with figure</h3>
+    <c-ds.hero class="bg-base-200">
+      <c-ds.hero.content class="flex-col lg:flex-row">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+          class="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div>
+          <h1 class="text-5xl font-bold">Box Office News!</h1>
+          <p class="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <c-ds.button color="primary">Get Started</c-ds.button>
+        </div>
+      </c-ds.hero.content>
+    </c-ds.hero>
+  </div>
+
+  <div>
+    <h3>Hero with overlay image</h3>
+
+    <c-ds.hero
+      style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+      overlay
+    >
+      <c-ds.hero.content class="text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <c-ds.button color="primary">Get Started</c-ds>
+        </div>
+      </c-ds.hero.content>
+    </c-ds.hero>
+  </div>
+
+</section>
+{% endblock %}

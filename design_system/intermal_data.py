@@ -288,4 +288,11 @@ COMPONENTS_METADATA = {
         url_name="footer",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/footer.html"
     ),
+    "hero": ComponentInfo(
+        name="Hero",
+        category=ComponentCategory.layout,
+        url_path_prefix="hero",
+        url_name="hero",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/hero.html"
+    ),
 }

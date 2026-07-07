@@ -80,7 +80,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Divider
 - [ ] Drawer sidebar
 - [X] [Footer](./design_system/templates/cotton/ds/footer/index.html)
-- [ ] Hero
+- [X] [Hero](./design_system/templates/cotton/ds/hero/index.html)
 - [X] [Indicator](./design_system/templates/cotton/ds/indicator/index.html)
 - [ ] Join (group items)
 - [X] [Mask](./design_system/templates/cotton/ds/mask/index.html)

@@ -1,0 +1,18 @@
+{% comment %}
+DaisyUI Hero Component
+
+https://daisyui.com/components/hero/
+
+{% endcomment %}
+
+
+<c-vars
+  as="div"
+  class=""
+  overlay
+/>
+
+<{{ as }} class="hero {{ class }}" {{ attrs }}>
+  {% if overlay %}<div class="hero-overlay"></div>{% endif %}
+  {{ slot }}
+</{{ as }}>
