@@ -71,6 +71,13 @@ COMPONENTS_METADATA = {
         url_name="progress",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/progress.html"
     ),
+    "radial_progress": ComponentInfo(
+        name="Radial Progress",
+        category=ComponentCategory.feedback,
+        url_path_prefix="radial_progress",
+        url_name="radial_progress",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/radial_progress.html"
+    ),
     "skeleton": ComponentInfo(
         name="Skeleton",
         category=ComponentCategory.feedback,
