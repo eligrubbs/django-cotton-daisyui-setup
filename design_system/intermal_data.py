@@ -302,4 +302,11 @@ COMPONENTS_METADATA = {
         url_name="divider",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/divider.html"
     ),
+    "join": ComponentInfo(
+        name="Join",
+        category=ComponentCategory.layout,
+        url_path_prefix="join",
+        url_name="join",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/join.html"
+    ),
 }

@@ -1,0 +1,23 @@
+{% comment %}
+DaisyUI Join Component
+
+https://daisyui.com/components/join/
+
+Give all child elements the `join-item` class
+
+{% endcomment %}
+
+
+<c-vars
+  class=""
+  direction=""
+  :directionClasses="{
+    '': '',
+    'horizontal': 'join-horizontal',
+    'vertical': 'join-vertical'
+  }"
+/>
+
+<div class="join {{ directionClasses|get_item:direction }} {{ class }}" {{ attrs }}>
+  {{ slot }}
+</div>

@@ -82,7 +82,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [X] [Footer](./design_system/templates/cotton/ds/footer/index.html)
 - [X] [Hero](./design_system/templates/cotton/ds/hero/index.html)
 - [X] [Indicator](./design_system/templates/cotton/ds/indicator/index.html)
-- [ ] Join (group items)
+- [X] [Join (group items)](./design_system/templates/cotton/ds/join/index.html)
 - [X] [Mask](./design_system/templates/cotton/ds/mask/index.html)
 - [X] [Stack](./design_system/templates/cotton/ds/stack/index.html)
 
