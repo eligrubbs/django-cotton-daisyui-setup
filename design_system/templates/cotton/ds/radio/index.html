@@ -1,0 +1,42 @@
+{% comment %}
+DaisyUI Radio Component
+
+https://daisyui.com/components/radio/
+
+Each set of radio inputs should have unique name attributes to avoid conflicts with other sets of radio inputs on the same page.
+
+{% endcomment %}
+
+<c-vars
+  as="input"
+  class=""
+  size=""
+  color=""
+  :sizeClasses="{
+    '': '',
+    'xs': 'radio-xs',
+    'sm': 'radio-sm',
+    'md': 'radio-md',
+    'lg': 'radio-lg',
+    'xl': 'radio-xl'
+  }"
+  :colorClasses="{
+    '': '',
+    'neutral': 'radio-neutral',
+    'primary': 'radio-primary',
+    'secondary': 'radio-secondary',
+    'accent': 'radio-accent',
+    'info': 'radio-info',
+    'success': 'radio-success',
+    'warning': 'radio-warning',
+    'error': 'radio-error'
+  }"
+  validate
+/>
+
+
+<{{ as }}
+  type="radio"
+  class="radio {{ sizeClasses|get_item:size }} {{ colorClasses|get_item:color }} {% if validate %}validator{% endif %} {{ class }}"
+  {{ attrs }}
+/>

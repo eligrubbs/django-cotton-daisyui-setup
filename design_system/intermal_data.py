@@ -316,4 +316,11 @@ COMPONENTS_METADATA = {
         url_name="rating",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/rating.html"
     ),
+    "radio": ComponentInfo(
+        name="Radio",
+        category=ComponentCategory.data_input,
+        url_path_prefix="radio",
+        url_name="radio",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/radio.html"
+    ),
 }
