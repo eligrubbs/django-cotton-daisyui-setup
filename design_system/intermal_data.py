@@ -309,4 +309,11 @@ COMPONENTS_METADATA = {
         url_name="join",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/join.html"
     ),
+    "rating": ComponentInfo(
+        name="Rating",
+        category=ComponentCategory.data_input,
+        url_path_prefix="rating",
+        url_name="rating",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/rating.html"
+    ),
 }

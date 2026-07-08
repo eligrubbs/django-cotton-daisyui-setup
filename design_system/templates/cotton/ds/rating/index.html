@@ -1,0 +1,81 @@
+{% comment %}
+DaisyUI Rating Component
+
+https://daisyui.com/components/rating/
+
+Items in each rating should have unique name attributes to avoid conflicts with other ratings on the same page.
+
+One Caveat: We use the django built-in `make_list` template tag. This means you should only pass a `max` of between 1 and 9.
+
+{% endcomment %}
+
+{% load ds_tags %}
+
+<c-vars
+  as="div"
+  class=""
+  shape="star-2"
+  size=""
+  color=""
+  name=""
+  max="5"
+  rating=""
+  half
+  hidden
+  :shapeClasses="{
+    '': '',
+    'squircle': 'mask mask-squircle',
+    'heart': 'mask mask-heart',
+    'hexagon': 'mask mask-hexagon',
+    'hexagon-2': 'mask mask-hexagon-2',
+    'decagon': 'mask mask-decagon',
+    'pentagon': 'mask mask-pentagon',
+    'diamond': 'mask mask-diamond',
+    'square': 'mask mask-square',
+    'circle': 'mask mask-circle',
+    'star': 'mask mask-star',
+    'star-2': 'mask mask-star-2',
+    'triangle': 'mask mask-triangle',
+    'triangle-2': 'mask mask-triangle-2',
+    'triangle-3': 'mask mask-triangle-3',
+    'triangle-4': 'mask mask-triangle-4'
+  }"
+  :sizeClasses="{
+    '': '',
+    'xs': 'rating-xs',
+    'sm': 'rating-sm',
+    'md': 'rating-md',
+    'lg': 'rating-lg',
+    'xl': 'rating-xl'
+  }"
+  :colorClasses="{
+    '': '',
+    'neutral': 'bg-neutral',
+    'primary': 'bg-primary',
+    'secondary': 'bg-secondary',
+    'accent': 'bg-accent',
+    'info': 'bg-info',
+    'success': 'bg-success',
+    'warning': 'bg-warning',
+    'error': 'bg-error'
+  }"
+/>
+
+
+<{{ as }}
+  class="rating {{ sizeClasses|get_item:size }} {% if half%}rating-half{% endif %} {{ class }}"
+  {{ attrs }}
+>
+  {% if hidden %}
+    <input type="radio" name="{{ name }}" class="rating-hidden" aria-label="clear"/>
+  {% endif %}
+
+  {% for i in max|make_range %}
+    {% if half %}
+      <input type="radio" name="{{ name }}" class="{{ shapeClasses|get_item:shape }} mask-half-1 {{ colorClasses|get_item:color }}" aria-label="{{ i|add:"-1" }}.5 star" {% if i|add:"-1"|equals_half_range:rate %}checked="checked"{% endif %} />
+      <input type="radio" name="{{ name }}" class="{{ shapeClasses|get_item:shape }} mask-half-2 {{ colorClasses|get_item:color }}" aria-label="{{ i }} star" {% if rate == i|slugify %}checked="checked"{% endif %} />
+    {% else %}
+      <input type="radio" name="{{ name }}" class="{{ shapeClasses|get_item:shape }} {{ colorClasses|get_item:color }}" aria-label="{{ i }} star" {% if rate == i|slugify %}checked="checked"{% endif %}/>
+    {% endif %}
+  {% endfor %}
+</{{ as }}>

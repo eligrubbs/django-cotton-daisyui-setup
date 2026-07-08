@@ -1,0 +1,50 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Rating Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Rating</h2>
+    <p class="text-base-content/70">All available DaisyUI rating colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Colors</h3>
+      {% for col in design_system.colors %}
+        <h4>{{ col|capfirst }}</h4>
+        <div class="flex flex-wrap gap-4 w-56">
+          <c-ds.rating rate="2" color="{{col}}" name="rating-{{ col }}"/>
+        </div>
+
+        <br>
+
+      {% endfor %}
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Sizes</h3>
+      {% for sz in design_system.sizes %}
+        <h4>{{ sz|capfirst }}</h4>
+        <div class="flex flex-wrap gap-4 w-56">
+          <c-ds.rating rate="2" color="primary" size="{{sz}}" name="rating-{{ sz }}"/>
+        </div>
+
+        <br>
+
+      {% endfor %}
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">By Half Increments</h3>
+      <c-ds.rating color="primary" name="rating-primary-half" half rate="3.5"/>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Reset Box to left using "hiden"</h3>
+      <c-ds.rating hidden color="primary" name="rating-primary-half-hidden" half rate="3.5"/>
+    </div>
+
+</section>
+{% endblock %}
