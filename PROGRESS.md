@@ -62,7 +62,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [ ] Calendar
 - [X] [Checkbox](./design_system/templates/cotton/ds/checkbox/index.html)
 - [X] [Fieldset](./design_system/templates/cotton/ds/fieldset/index.html)
-- [ ] File Input
+- [X] [File Input](./design_system/templates/cotton/ds/file_input/index.html)
 - [x] [Filter](./design_system/templates/cotton/ds/filter/index.html)
 - [X] [Label](./design_system/templates/cotton/ds/label/index.html)
 - [X] [Radio](./design_system/templates/cotton/ds/radio/index.html)

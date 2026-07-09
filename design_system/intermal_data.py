@@ -337,4 +337,11 @@ COMPONENTS_METADATA = {
         url_name="filter",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/filter.html"
     ),
+    "file_input": ComponentInfo(
+        name="File Input",
+        category=ComponentCategory.data_input,
+        url_path_prefix="file_input",
+        url_name="file_input",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/file_input.html"
+    ),
 }

@@ -1,0 +1,52 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}File Input Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">File Input</h2>
+    <p class="text-base-content/70">All available DaisyUI file input colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Size</h3>
+    <div class="my-3">
+      {% for sz in design_system.sizes %}
+        <c-ds.file-input size="{{ sz }}"/>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Color</h3>
+    {% for col in design_system.colors %}
+      <div class="my-3">
+        <c-ds.file-input color="{{ col }}"/>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">With fieldset and label</h3>
+    <c-ds.fieldset>
+      <c-ds.fieldset.legend>Pick a file</c-ds.fieldset.legend>
+      <c-ds.file-input />
+      <c-ds.label>Max size 2MB</c-ds.label>
+    </c-ds.fieldset>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Ghost</h3>
+    <c-ds.file-input style_="ghost"/>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Disabled</h3>
+    <c-ds.file-input disabled placeholder="You can't touch this"/>
+  </div>
+
+
+</section>
+{% endblock %}
