@@ -1,0 +1,34 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Filter Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Filter</h2>
+    <p class="text-base-content/70">All available DaisyUI filter colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Filter with HTML Form</h3>
+    <c-ds.filter>
+      <c-ds.filter.item type="reset" />
+      <c-ds.filter.item name="frameworks" label="Svelte"/>
+      <c-ds.filter.item name="frameworks" label="Vue"/>
+      <c-ds.filter.item name="frameworks" label="React"/>
+    </c-ds.filter>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Filter MultiSelect with HTML Form</h3>
+    <c-ds.filter>
+      <c-ds.filter.item type="reset" />
+      <c-ds.filter.item name="frameworks" type="checkbox" label="Svelte"/>
+      <c-ds.filter.item name="frameworks" type="checkbox" label="Vue"/>
+      <c-ds.filter.item name="frameworks" type="checkbox" label="React"/>
+    </c-ds.filter>
+  </div>
+
+</section>
+{% endblock %}
