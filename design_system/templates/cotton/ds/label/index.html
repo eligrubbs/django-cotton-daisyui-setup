@@ -1,0 +1,16 @@
+{% comment %}
+DaisyUI Label Component
+
+https://daisyui.com/components/label/
+
+Label is used to provide a name or title for an input field. Label can be placed before or after the field.
+{% endcomment %}
+
+
+<c-vars class="" as="span" floating />
+
+{% if floating %}
+<label class="floating-label {{ class }}" {{ attrs }}>{{ slot }}</label>
+{% else %}
+<{{ as }} class="label {{ class }}" {{ attrs }}>{{ slot }}</{{ as }}>
+{% endif %}

@@ -1,0 +1,40 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Label Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Label</h2>
+    <p class="text-base-content/70">All available DaisyUI label colors and modifiers.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Label for Input</h3>
+    <label class="input">
+      <c-ds.label class="label">https://</c-ds.label>
+      <c-ds.input type="text" placeholder="URL"/>
+    </label>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Label for Input at the end</h3>
+    <label class="input">
+      <c-ds.input type="text" placeholder="domain name"/>
+      <c-ds.label class="label">.com</c-ds.label>
+    </label>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Floating Label with Different Sizes</h3>
+    {% for sz in design_system.sizes %}        
+      <c-ds.label floating class="my-2">
+        <c-ds.input type="text" size="{{sz}}" placeholder="domain name"/>
+        <span>{{sz|capfirst}}</span>
+      </c-ds.label>
+    {% endfor %}
+  </div>
+
+</section>
+{% endblock %}
