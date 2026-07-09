@@ -66,7 +66,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [x] [Filter](./design_system/templates/cotton/ds/filter/index.html)
 - [X] [Label](./design_system/templates/cotton/ds/label/index.html)
 - [X] [Radio](./design_system/templates/cotton/ds/radio/index.html)
-- [ ] Range
+- [X] [Range](./design_system/templates/cotton/ds/range/index.html)
 - [X] [Rating](./design_system/templates/cotton/ds/rating/index.html)
 - [X] [Select](./design_system/templates/cotton/ds/select/index.html)
 - [X] [Input field](./design_system/templates/cotton/ds/input/index.html)

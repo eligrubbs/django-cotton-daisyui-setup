@@ -1,0 +1,44 @@
+{% comment %}
+DaisyUI Range Component
+
+https://daisyui.com/components/range/
+
+{% endcomment %}
+
+
+<c-vars
+    class=""
+    color=""
+    size="md"
+    direction=""
+    :colorClasses="{
+      '': '',
+      'neutral': 'range-neutral',
+      'primary': 'range-primary',
+      'secondary': 'range-secondary',
+      'accent': 'range-accent',
+      'info': 'range-info',
+      'success': 'range-success',
+      'warning': 'range-warning',
+      'error': 'range-error'
+    }"
+    :sizeClasses="{
+      '': '',
+      'xs': 'range-xs',
+      'sm': 'range-sm',
+      'md': 'range-md',
+      'lg': 'range-lg',
+      'xl': 'range-xl'
+    }"
+    :directionClasses="{
+      '': '',
+      'vertical': 'range-vertical',
+    }"
+    validate
+/>
+
+<input
+    type="range"
+    class="range {{ colorClasses|get_item:color }} {{ sizeClasses|get_item:size }} {{ directionClasses|get_item:direction }} {% if validate %}validator{% endif %} {{ class }}"
+    {{ attrs }}
+/>

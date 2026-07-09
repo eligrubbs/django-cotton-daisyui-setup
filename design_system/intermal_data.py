@@ -344,4 +344,11 @@ COMPONENTS_METADATA = {
         url_name="file_input",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/file_input.html"
     ),
+    "range": ComponentInfo(
+        name="Range",
+        category=ComponentCategory.data_input,
+        url_path_prefix="range",
+        url_name="range",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/range.html"
+    ),
 }
