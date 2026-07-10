@@ -78,7 +78,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 ### Layout
 
 - [X] [Divider](./design_system/templates/cotton/ds/divider/index.html)
-- [ ] Drawer sidebar
+- [X] [Drawer sidebar](./design_system/templates/cotton/ds/drawer/index.html)
 - [X] [Footer](./design_system/templates/cotton/ds/footer/index.html)
 - [X] [Hero](./design_system/templates/cotton/ds/hero/index.html)
 - [X] [Indicator](./design_system/templates/cotton/ds/indicator/index.html)

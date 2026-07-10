@@ -351,4 +351,11 @@ COMPONENTS_METADATA = {
         url_name="range",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/range.html"
     ),
+    "drawer": ComponentInfo(
+        name="Drawer",
+        category=ComponentCategory.layout,
+        url_path_prefix="drawer",
+        url_name="drawer",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/drawer.html"
+    ),
 }
