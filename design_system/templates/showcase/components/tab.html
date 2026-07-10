@@ -1,0 +1,104 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Tab Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+  <h2 class="text-3xl font-bold mb-2">Tab</h2>
+  <p class="text-base-content/70">All DaisyUI tabs variants.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Tabs</h3>
+    <div>
+      <c-ds.tabs>
+        <c-ds.tabs.tab>Tab 1</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="active">Tab 2</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="disabled">Tab 3</c-ds.tabs.tab>
+      </c-ds.tabs>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Tabs Border</h3>
+    <div>
+      <c-ds.tabs style_="border">
+        <c-ds.tabs.tab>Tab 1</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="active">Tab 2</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="disabled">Tab 3</c-ds.tabs.tab>
+      </c-ds.tabs>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Tabs Box</h3>
+    <div>
+      <c-ds.tabs style_="box">
+        <c-ds.tabs.tab>Tab 1</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="active">Tab 2</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="disabled">Tab 3</c-ds.tabs.tab>
+      </c-ds.tabs>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Tabs Lift</h3>
+    <div>
+      <c-ds.tabs style_="lift">
+        <c-ds.tabs.tab>Tab 1</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="active">Tab 2</c-ds.tabs.tab>
+        <c-ds.tabs.tab modifier="disabled">Tab 3</c-ds.tabs.tab>
+      </c-ds.tabs>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Tab With Radio Inputs</h3>
+    <div>
+      <c-ds.tabs style_="box">
+        <c-ds.tabs.tab as="input" type="radio" name="my_tabs_1" aria-label="Tab-1"/>
+        <c-ds.tabs.tab as="input" type="radio" name="my_tabs_1" aria-label="Tab-2" checked="checked"/>
+        <c-ds.tabs.tab as="input" type="radio" name="my_tabs_1" aria-label="Tab-3"/>
+      </c-ds.tabs>
+    </div>
+  </div>
+
+  
+  <div>
+    <h3 class="text-lg font-semibold mb-4">Sizes</h3>
+    <div>
+      {% for sz in design_system.sizes %}
+        <c-ds.tabs style_="lift" size="{{ sz }}">
+          <c-ds.tabs.tab>Tab 1</c-ds.tabs.tab>
+          <c-ds.tabs.tab modifier="active">Tab 2</c-ds.tabs.tab>
+          <c-ds.tabs.tab modifier="disabled">Tab 3</c-ds.tabs.tab>
+        </c-ds.tabs>
+      {% endfor %}
+    </div>
+  </div>
+
+  
+  <div>
+    <h3 class="text-lg font-semibold mb-4">radio tabs-lift + tab content</h3>
+    <div>
+      <c-ds.tabs style_="lift" >
+        <c-ds.tabs.content title="Live" name="my_tabs_2" class="bg-base-100 border-base-300 p-6">
+          Tab content 1
+        </c-ds.tabs.content>
+
+        <c-ds.tabs.content title="Laught" name="my_tabs_2" class="bg-base-100 border-base-300 p-6">
+          Content 2
+        </c-ds.tabs.content>
+
+        <c-ds.tabs.content title="Love" name="my_tabs_2" class="bg-base-100 border-base-300 p-6">
+          Content 3
+        </c-ds.tabs.content>
+
+      </c-ds.tabs>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

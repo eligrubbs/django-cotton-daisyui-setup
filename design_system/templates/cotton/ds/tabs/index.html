@@ -1,0 +1,48 @@
+{% comment %}
+DaisyUI Tab Component
+
+https://daisyui.com/components/tab/
+
+Put content in the content slot
+
+{% endcomment %}
+
+
+<c-vars
+  as="div"
+  class=""
+  style_=""
+  placement="top"
+  size="md"
+  name="tabs"
+  :styleClasses="{
+    '': '',
+    'border': 'tabs-border',
+    'lift': 'tabs-lift',
+    'box': 'tabs-box'
+  }"
+  :placementClasses="{
+    '': '',
+    'top': '',
+    'bottom': 'tabs-bottom'
+  }"
+  :sizeClasses="{
+    '': '',
+    'xs': 'tabs-xs',
+    'sm': 'tabs-sm',
+    'md': 'tabs-md',
+    'lg': 'tabs-lg',
+    'xl': 'tabs-xl'
+  }"
+/>
+
+<{{ as }}
+  class="tabs {{ styleClasses|get_item:style_ }} {{ placementClasses|get_item:placement }} {{ sizeClasses|get_item:size }} {{ class }}"
+  {{ attrs }}
+>
+  {% if not content %}
+    {{ slot }}
+  {% else %}
+    {{ content }}
+  {% endif %}
+</{{ as }}>

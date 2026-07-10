@@ -1,0 +1,23 @@
+{% comment %}
+For a simple tab with no content
+{% endcomment %}
+
+<c-vars
+  as="a"
+  class=""
+  modifier=""
+  :modiferClasses="{
+    '': '',
+    'active': 'tab-active',
+    'disabled': 'tab-disabled',
+  }"
+/>
+
+
+<{{ as }}
+  role="tab"
+  class="tab {{ modiferClasses|get_item:modifier }} {{ class }}"
+  {{ attrs }}
+>
+  {{ slot }}
+</{{ as }}>

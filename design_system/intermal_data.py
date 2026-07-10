@@ -358,4 +358,11 @@ COMPONENTS_METADATA = {
         url_name="drawer",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/drawer.html"
     ),
+    "tab": ComponentInfo(
+        name="Tab",
+        category=ComponentCategory.navigation,
+        url_path_prefix="tab",
+        url_name="tab",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/tab.html"
+    ),
 }

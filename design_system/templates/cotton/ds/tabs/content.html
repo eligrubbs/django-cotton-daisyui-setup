@@ -1,0 +1,34 @@
+{% comment %}
+For a complex tab with content
+{% endcomment %}
+
+<c-vars
+  class=""
+  name=""
+  modifier=""
+  :modiferClasses="{
+    '': '',
+    'active': 'tab-active',
+    'disabled': 'tab-disabled',
+  }"
+  title=""
+/>
+
+
+{% if not input %}
+  <label class="tab">
+    <input
+      type="radio"
+      name="{{ name }}"
+      {% if modifier == 'active' %}checked="checked"{% endif %}
+      {% if modifier == 'disabled' %}disabled{% endif %}
+    />
+    {% if title %}{{ title }}{% endif %}
+  </label>
+{% else %}
+  {{ input }}
+{% endif %}
+
+<div class="tab-content {{ modiferClasses|get_item:modifier }} {{ class }}" {{ attrs }}>
+  {{ slot }}
+</div>
