@@ -1,0 +1,13 @@
+<c-vars
+  as="div"
+  class=""
+  title=""
+/>
+
+<{{ as }} class="collapse-content {{ class }}" {{ attrs }}>
+  {% if title %}  
+    {{ title }}
+  {% else %}
+    {{ slot }}
+  {% endif %}
+</{{ as }}>

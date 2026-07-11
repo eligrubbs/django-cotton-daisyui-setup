@@ -1,0 +1,54 @@
+{% comment %}
+DaisyUI Collapse Component
+
+https://daisyui.com/components/collapse/
+
+To prevent an input checkbox (if you want to do tab focus), provide withFocus
+
+{% endcomment %}
+
+<c-vars
+  class=""
+  as="div"
+  title=""
+  style_=""
+  state=""
+  closeId=""
+  withFocus
+  noBorder
+  :styleClasses="{
+    '': '',
+    'arrow': 'collapse-arrow',
+    'plus': 'collapse-plus'
+  }"
+  :stateClasses="{
+    '': '',
+    'open': 'collapse-open',
+    'close': 'collapse-close'
+  }"
+/>
+
+<{{ as }}
+  {% if withFocus %}tabindex="0"{% endif %}
+  class="collapse {{ styleClasses|get_item:style_ }} {{ stateClasses|get_item:state }} {% if not noBorder %}bg-base-100 border-base-300 border{% endif %} {{ class }}"
+  {{ attrs }}
+>
+  {% if not withFocus %}
+    <input {% if closeId %}id="{{ closeId }}" class="peer"{% endif %} type="checkbox" {% if state == 'open' %}checked{% endif %} />
+    
+    {% if closeId %}
+      <label for="{{ closeId }}" class="fixed inset-0 hidden peer-checked:block"></label>
+    {% endif %}
+  {% endif %}
+
+  {% if title %}
+    <c-ds.collapse.title class="font-semibold" :withFocus=withFocus>
+      {{ title }}
+    </c-ds.collapse.title>
+  {% else %}
+    {{ titleSlot }}
+  {% endif %}
+
+  {{ slot }}
+
+</{{ as }}>

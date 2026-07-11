@@ -1,0 +1,16 @@
+{% comment %}
+DaisyUI Accordion Component
+
+
+{% endcomment %}
+
+<c-vars
+  as="div"
+  class=""
+  join
+/>
+
+
+<{{ as }} class="{% if join %}join join-vertical{% endif %} {{ class }}" {{ attrs }}>
+  {{ slot }}
+</{{ as }}>

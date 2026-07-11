@@ -22,7 +22,7 @@ This file tracks the progress of implementing all [daisyUI](https://daisyui.com/
 - [X] [Card](./design_system/templates/cotton/ds/card/index.html)
 - [ ] Carousel
 - [ ] Chat bubble
-- [ ] Collapse
+- [X] [Collapse](./design_system/templates/cotton/ds/collapse/index.html)
 - [ ] Countdown
 - [ ] Diff
 - [ ] Hover 3D card

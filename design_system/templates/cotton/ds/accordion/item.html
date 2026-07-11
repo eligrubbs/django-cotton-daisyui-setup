@@ -1,0 +1,24 @@
+<c-vars
+  class=""
+  name=""
+  checked
+  title=""
+  modifier=""
+  :modifierClasses="{
+    'arrow': 'collapse-arrow',
+    'plus': 'collapse-plus'
+  }"
+  join
+/>
+
+<details class="collapse {{ modifierClasses|get_item:modifier }} {% if join %}join-item{% endif %} {{ class }}" {{ attrs }}>
+  <input type="radio" name="{{ name }}" {% if checked %}checked{% endif %} />
+  {% if title %}
+    <div class="collapse-title font-semibold">{{ title }}</div>
+  {% else %}
+    {{ titleSlot }}
+  {% endif %}
+  <div class="collapse-content">
+    {{ slot }}
+  </div>
+</details>

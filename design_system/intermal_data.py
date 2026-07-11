@@ -365,4 +365,11 @@ COMPONENTS_METADATA = {
         url_name="tab",
         showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/tab.html"
     ),
+    "collapse": ComponentInfo(
+        name="Collapse",
+        category=ComponentCategory.navigation,
+        url_path_prefix="collapse",
+        url_name="collapse",
+        showcase_template_path_str=f"{SHOWCASE_COMMON_PREFIX}/collapse.html"
+    ),
 }
