@@ -2,6 +2,8 @@
 
 Bringing the power for daisyUI and django-cotton to your django repo, while forcing as little as possible onto your architecture.
 
+Current Status: This repo was really for me to learn more about daisyUI + django-cotton. I don't plan on finishing everything / keeping it up to date.
+
 ## TLDR; What is this repo?
 
 This repository manages a slim script to copy/paste an opinionated (in the best way) [django-cotton](https://django-cotton.com/) django app containing a component library into the directory of your choosing so you can hit the ground running building your design system on top of [daisyui](https://daisyui.com) in your django project.
