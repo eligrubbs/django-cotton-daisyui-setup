@@ -2,6 +2,11 @@
 
 Bringing the power for daisyUI and django-cotton to your django repo, while forcing as little as possible onto your architecture.
 
+Usage:
+```
+copier copy https://github.com/eligrubbs/django-cotton-daisyui-setup
+```
+
 Current Status: This repo was really for me to learn more about daisyUI + django-cotton. I don't plan on finishing everything / keeping it up to date.
 
 ## TLDR; What is this repo?
@@ -16,7 +21,7 @@ It also has guides on how exactly to hook-up and tweak the files you just dumped
 - You have chosen DaisyUI as the basis for your design system.
 - You don't mind using `django-cotton` to manage some of your components.
 
-## Why copy/paste and not `pip install`?
+## Why copier and not `pip install`?
 
 I believe it makes sense that the developer own a copy of the code powering their design system.
 
