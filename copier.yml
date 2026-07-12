@@ -1,0 +1,16 @@
+# questions
+_exclude:
+  # default values
+  - "copier.yaml"
+  - "copier.yml"
+  - "~*"
+  - "*.py[co]"
+  - "__pycache__"
+  - ".git"
+  - ".DS_Store"
+  - ".svn"
+  # my extra
+  - "example_usage"
+  - "LICENSE"
+  - "PROGRESS.md"
+  - "README.md"
